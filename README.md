@@ -64,10 +64,9 @@ The solution follows industry-standard ELT patterns and emphasises data quality,
 
 ## 📁 Project Structure
 models/
-├── raw/ # Source definitions
-├── staging/ # Cleaned & standardised data
-├── marts/ # Business-ready models (fact & aggregates)
-
+- raw/ # Source definitions
+- staging/ # Cleaned & standardised data
+- marts/ # Business-ready models (fact & aggregates)
 
 ---
 
