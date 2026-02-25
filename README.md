@@ -1,4 +1,4 @@
-# 🚀 Data Engineering & Analytics Engineering Project (AWS + Snowflake + dbt)
+# 🚀 Data & Analytics Engineering Project (AWS + Snowflake + dbt)
 
 ## 📌 Overview
 This project demonstrates a modern, end-to-end data platform combining data engineering and analytics engineering practices. It showcases how raw data can be ingested, transformed, and modelled into a scalable analytics layer that supports business decision-making.
