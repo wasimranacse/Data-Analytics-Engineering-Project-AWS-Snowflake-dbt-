@@ -5384,3 +5384,854 @@
 11:25:22.303702 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
 11:25:22.303709 [info ]: Finished analyzing [  0.01s] (2 nodes, 1 skipped, 0 errors)
 11:25:22.308991 [info ]: Cached model count updated: 2 models (accurate)
+11:25:28.230338 [info ]: Started loading project
+11:25:28.232852 [info ]: Loading ~/.dbt/profiles.yml
+11:25:28.247413 [info ]: Started loading project
+11:25:28.248526 [info ]: Loading ~/.dbt/profiles.yml
+11:25:28.248813 [info ]: Finished loading project [  0.02s]
+11:25:28.285233 [debug]:    Started loading packages
+11:25:28.290059 [debug]:     Loaded [  0.00s] packages
+11:25:28.290099 [debug]:    Started loading internal packages
+11:25:28.313473 [debug]:     Loaded [  0.02s] internal packages
+11:25:28.313783 [info ]: Started parsing
+11:25:28.350917 [info ]: Finished loading project [  0.10s]
+11:25:28.352854 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:28.357318 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:28.358815 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:25:28.361118 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:28.361216 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:28.361244 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_products.sql:11:6
+11:25:28.361956 [info ]: Cached model count updated: 3 models (estimate)
+11:25:28.361968 [info ]: Cached model count updated: 3 models (accurate)
+11:25:28.361988 [info ]: Started scheduling
+11:25:28.362032 [info ]: Finished scheduling [  0.00s]
+11:25:28.362048 [info ]: Started scheduling
+11:25:28.362064 [info ]: Finished scheduling [  0.00s]
+11:25:28.362149 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:28.362710 [info ]: Started deferring state
+11:25:28.362727 [info ]: Finished deferring state [  0.00s]
+11:25:28.363003 [info ]: Started downloading schemas
+11:25:28.363032 [debug]:    Started downloading relations
+11:25:28.363050 [debug]:   Finished [  0.00s] downloading relations
+11:25:28.363060 [info ]: Finished downloading schemas [  0.00s]
+11:25:28.518268 [info ]: Started building task graph
+11:25:28.518343 [info ]: Finished building task graph [  0.00s]
+11:25:28.522063 [info ]: Finished parsing [  0.21s]
+11:25:28.568205 [info ]: Started loading project
+11:25:28.569263 [info ]: Loading ~/.dbt/profiles.yml
+11:25:28.608580 [debug]:    Started loading packages
+11:25:28.614581 [debug]:     Loaded [  0.01s] packages
+11:25:28.614615 [debug]:    Started loading internal packages
+11:25:28.636303 [debug]:     Loaded [  0.02s] internal packages
+11:25:28.636598 [info ]: Started parsing
+11:25:28.677593 [info ]: Finished loading project [  0.11s]
+11:25:28.679596 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:28.684709 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:28.685844 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:25:28.687601 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:28.687955 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:28.687985 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_products.sql:11:6
+11:25:28.688671 [info ]: Cached model count updated: 3 models (estimate)
+11:25:28.688685 [info ]: Cached model count updated: 3 models (accurate)
+11:25:28.688705 [info ]: Started scheduling
+11:25:28.688762 [info ]: Finished scheduling [  0.00s]
+11:25:28.688775 [info ]: Started scheduling
+11:25:28.688795 [info ]: Finished scheduling [  0.00s]
+11:25:28.688822 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:28.690433 [info ]: Started deferring state
+11:25:28.690462 [info ]: Finished deferring state [  0.00s]
+11:25:28.690827 [info ]: Started downloading schemas
+11:25:28.690869 [debug]:    Started downloading relations
+11:25:28.690890 [debug]:   Finished [  0.00s] downloading relations
+11:25:28.690902 [info ]: Finished downloading schemas [  0.00s]
+11:25:28.914616 [info ]: Started building task graph
+11:25:28.914738 [info ]: Finished building task graph [  0.00s]
+11:25:28.914910 [info ]: Started rendering (3 nodes)
+11:25:28.914936 [info ]: Started model STAGING.stg_orders
+11:25:28.914950 [debug]: Started rendering model STAGING.stg_orders
+11:25:28.915254 [info ]: Finished parsing [  0.28s]
+11:25:28.918074 [info ]: Started model MARTS.agg_top_products
+11:25:28.918225 [debug]: Started rendering model MARTS.agg_top_products
+11:25:28.918405 [info ]: Started model MARTS.agg_top_customers
+11:25:28.918445 [debug]: Started rendering model MARTS.agg_top_customers
+11:25:28.919980 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_top_products.sql:11:6)
+  --> models\marts\agg_top_products.sql:11:6
+11:25:28.920043 [info ]: Started analyzing (3 nodes)
+11:25:28.920058 [debug]: Started analyzing model MARTS.agg_top_products
+11:25:28.920078 [info ]:     Failed [  0.00s] model MARTS.agg_top_products (table)
+11:25:28.920104 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_products [skipped]
+11:25:28.920136 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_products [error]
+11:25:28.921119 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_top_customers.sql:10:6)
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:28.921161 [debug]: Started analyzing model MARTS.agg_top_customers
+11:25:28.921182 [info ]:     Failed [  0.00s] model MARTS.agg_top_customers (table)
+11:25:28.921200 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [skipped]
+11:25:28.921226 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_customers [error]
+11:25:28.924111 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:25:28.924456 [debug]: Started analyzing model STAGING.stg_orders
+11:25:28.924607 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:25:28.924647 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 2 errors)
+11:25:28.938056 [info ]:  Succeeded [  0.02s] model STAGING.stg_orders (view)
+11:25:28.938100 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
+11:25:28.938109 [info ]: Finished analyzing [  0.02s] (3 nodes, 2 skipped, 0 errors)
+11:25:28.943212 [info ]: Cached model count updated: 3 models (accurate)
+11:25:35.336163 [info ]: Started loading project
+11:25:35.337377 [info ]: Loading ~/.dbt/profiles.yml
+11:25:35.347409 [info ]: Started loading project
+11:25:35.348246 [info ]: Loading ~/.dbt/profiles.yml
+11:25:35.348306 [info ]: Finished loading project [  0.01s]
+11:25:35.386706 [debug]:    Started loading packages
+11:25:35.402205 [debug]:     Loaded [  0.02s] packages
+11:25:35.402241 [debug]:    Started loading internal packages
+11:25:35.435257 [debug]:     Loaded [  0.03s] internal packages
+11:25:35.435604 [info ]: Started parsing
+11:25:35.493233 [info ]: Finished loading project [  0.15s]
+11:25:35.495651 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:35.499786 [debug]: Finished parsing models\marts\agg_customer_type.sql [  0.00s]
+11:25:35.501240 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:35.502281 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:25:35.505567 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:35.505872 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_customer_type.sql:9:6
+11:25:35.505923 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:35.505944 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_products.sql:11:6
+11:25:35.507125 [info ]: Cached model count updated: 4 models (estimate)
+11:25:35.507154 [info ]: Cached model count updated: 4 models (accurate)
+11:25:35.507258 [info ]: Started scheduling
+11:25:35.507337 [info ]: Finished scheduling [  0.00s]
+11:25:35.507358 [info ]: Started scheduling
+11:25:35.507387 [info ]: Finished scheduling [  0.00s]
+11:25:35.507434 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:35.508341 [info ]: Started deferring state
+11:25:35.508373 [info ]: Finished deferring state [  0.00s]
+11:25:35.508742 [info ]: Started downloading schemas
+11:25:35.508787 [debug]:    Started downloading relations
+11:25:35.508809 [debug]:   Finished [  0.00s] downloading relations
+11:25:35.508822 [info ]: Finished downloading schemas [  0.00s]
+11:25:35.678035 [info ]: Started building task graph
+11:25:35.678112 [info ]: Finished building task graph [  0.00s]
+11:25:35.681630 [info ]: Finished parsing [  0.25s]
+11:25:35.725246 [info ]: Started loading project
+11:25:35.726162 [info ]: Loading ~/.dbt/profiles.yml
+11:25:35.798743 [debug]:    Started loading packages
+11:25:35.815361 [debug]:     Loaded [  0.02s] packages
+11:25:35.815403 [debug]:    Started loading internal packages
+11:25:35.851379 [debug]:     Loaded [  0.04s] internal packages
+11:25:35.851677 [info ]: Started parsing
+11:25:35.892136 [info ]: Finished loading project [  0.17s]
+11:25:35.894048 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:35.896799 [debug]: Finished parsing models\marts\agg_customer_type.sql [  0.00s]
+11:25:35.898356 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:35.899828 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:25:35.901895 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:35.902157 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_customer_type.sql:9:6
+11:25:35.902185 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:35.902198 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_products.sql:11:6
+11:25:35.902872 [info ]: Cached model count updated: 4 models (estimate)
+11:25:35.902885 [info ]: Cached model count updated: 4 models (accurate)
+11:25:35.902904 [info ]: Started scheduling
+11:25:35.902956 [info ]: Finished scheduling [  0.00s]
+11:25:35.902970 [info ]: Started scheduling
+11:25:35.902991 [info ]: Finished scheduling [  0.00s]
+11:25:35.903017 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:35.903544 [info ]: Started deferring state
+11:25:35.903567 [info ]: Finished deferring state [  0.00s]
+11:25:35.903884 [info ]: Started downloading schemas
+11:25:35.903915 [debug]:    Started downloading relations
+11:25:35.903933 [debug]:   Finished [  0.00s] downloading relations
+11:25:35.903943 [info ]: Finished downloading schemas [  0.00s]
+11:25:36.071431 [info ]: Started building task graph
+11:25:36.071529 [info ]: Finished building task graph [  0.00s]
+11:25:36.071675 [info ]: Started rendering (4 nodes)
+11:25:36.071695 [info ]: Started model STAGING.stg_orders
+11:25:36.071708 [debug]: Started rendering model STAGING.stg_orders
+11:25:36.071732 [info ]: Started model MARTS.agg_top_products
+11:25:36.071742 [debug]: Started rendering model MARTS.agg_top_products
+11:25:36.071757 [info ]: Started model MARTS.agg_top_customers
+11:25:36.071775 [info ]: Finished parsing [  0.22s]
+11:25:36.071765 [debug]: Started rendering model MARTS.agg_top_customers
+11:25:36.071976 [info ]: Started model MARTS.agg_customer_type
+11:25:36.071993 [debug]: Started rendering model MARTS.agg_customer_type
+11:25:36.074928 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_top_products.sql:11:6)
+  --> models\marts\agg_top_products.sql:11:6
+11:25:36.074995 [info ]: Started analyzing (4 nodes)
+11:25:36.075011 [debug]: Started analyzing model MARTS.agg_top_products
+11:25:36.075048 [info ]:     Failed [  0.00s] model MARTS.agg_top_products (table)
+11:25:36.075078 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_products [skipped]
+11:25:36.075120 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_customer_type.sql:9:6)
+  --> models\marts\agg_customer_type.sql:9:6
+11:25:36.075143 [debug]: Started analyzing model MARTS.agg_customer_type
+11:25:36.075159 [info ]:     Failed [  0.00s] model MARTS.agg_customer_type (table)
+11:25:36.075171 [debug]: Finished analyzing [  0.00s] model MARTS.agg_customer_type [skipped]
+11:25:36.075171 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_products [error]
+11:25:36.075199 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_top_customers.sql:10:6)
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:36.075217 [debug]: Started analyzing model MARTS.agg_top_customers
+11:25:36.075228 [info ]:     Failed [  0.00s] model MARTS.agg_top_customers (table)
+11:25:36.075238 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [skipped]
+11:25:36.075260 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_customers [error]
+11:25:36.075276 [debug]: Finished rendering [  0.00s] model MARTS.agg_customer_type [error]
+11:25:36.078487 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:25:36.078602 [debug]: Started analyzing model STAGING.stg_orders
+11:25:36.078788 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:25:36.078888 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 3 errors)
+11:25:36.086953 [info ]:  Succeeded [  0.01s] model STAGING.stg_orders (view)
+11:25:36.087022 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
+11:25:36.087039 [info ]: Finished analyzing [  0.01s] (4 nodes, 3 skipped, 0 errors)
+11:25:36.091246 [info ]: Cached model count updated: 4 models (accurate)
+11:28:46.956206 [info ]: Started loading project
+11:28:46.957040 [info ]: Loading ~/.dbt/profiles.yml
+11:28:46.964471 [info ]: Started loading project
+11:28:46.966516 [info ]: Loading ~/.dbt/profiles.yml
+11:28:46.966797 [info ]: Finished loading project [  0.01s]
+11:28:46.990622 [debug]:    Started loading packages
+11:28:46.996000 [debug]:     Loaded [  0.01s] packages
+11:28:46.996041 [debug]:    Started loading internal packages
+11:28:47.018250 [debug]:     Loaded [  0.02s] internal packages
+11:28:47.018544 [info ]: Started parsing
+11:28:47.064291 [info ]: Finished loading project [  0.10s]
+11:28:47.070889 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:28:47.075408 [debug]: Finished parsing models\marts\agg_customer_type.sql [  0.00s]
+11:28:47.077346 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:28:47.078123 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:28:47.080666 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:28:47.085385 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:28:47.085423 [info ]: Finished parsing [  0.07s]
+11:28:47.086526 [info ]: Cached model count updated: 5 models (estimate)
+11:28:47.086576 [info ]: Cached model count updated: 5 models (accurate)
+11:28:47.086658 [info ]: Started scheduling
+11:28:47.086822 [info ]: Finished scheduling [  0.00s]
+11:28:47.086861 [info ]: Started scheduling
+11:28:47.086927 [info ]: Finished scheduling [  0.00s]
+11:28:47.087020 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "MARTS", table: "FCT_ORDERS" }) and interval: None
+11:28:47.087118 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:28:47.088081 [info ]: Started deferring state
+11:28:47.088112 [info ]: Finished deferring state [  0.00s]
+11:28:47.088622 [info ]: Started downloading schemas
+11:28:47.088704 [debug]:    Started downloading relations
+11:28:47.088737 [debug]:   Finished [  0.00s] downloading relations
+11:28:48.960813 [debug]: Query executed on node unknown:
+describe table "ECOMMERCE_ANALYTICS"."MARTS"."FCT_ORDERS"
+11:28:49.731523 [info ]: Downloaded ECOMMERCE_ANALYTICS.MARTS.fct_orders (schema)
+11:28:51.390249 [info ]: Started building task graph
+11:28:51.390754 [info ]: Finished building task graph [  0.00s]
+11:28:51.391508 [info ]: Started rendering (4 nodes)
+11:28:51.391640 [info ]: Started model STAGING.stg_orders
+11:28:51.391711 [debug]: Started rendering model STAGING.stg_orders
+11:28:51.391863 [info ]: Started model MARTS.agg_top_products
+11:28:51.391939 [debug]: Started rendering model MARTS.agg_top_products
+11:28:51.392017 [info ]: Started model MARTS.agg_top_customers
+11:28:51.392063 [debug]: Started rendering model MARTS.agg_top_customers
+11:28:51.392132 [info ]: Started model MARTS.agg_customer_type
+11:28:51.392183 [debug]: Started rendering model MARTS.agg_customer_type
+11:28:51.392177 [info ]: Finished downloading schemas [  4.30s]
+11:28:51.417371 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:28:51.417693 [info ]: Started analyzing (4 nodes)
+11:28:51.417751 [debug]: Started analyzing model STAGING.stg_orders
+11:28:51.419967 [debug]: Finished rendering [  0.03s] model STAGING.stg_orders [success]
+11:28:51.429980 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_customers at target\.lsp\compiled\models\marts\agg_top_customers.sql
+11:28:51.430290 [debug]: Started analyzing model MARTS.agg_top_customers
+11:28:51.433847 [debug]: Finished rendering [  0.04s] model MARTS.agg_top_customers [success]
+11:28:51.446915 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_products at target\.lsp\compiled\models\marts\agg_top_products.sql
+11:28:51.447252 [debug]: Started analyzing model MARTS.agg_top_products
+11:28:51.449977 [debug]: Finished rendering [  0.06s] model MARTS.agg_top_products [success]
+11:28:51.452475 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_customer_type at target\.lsp\compiled\models\marts\agg_customer_type.sql
+11:28:51.453514 [debug]: Started analyzing model MARTS.agg_customer_type
+11:28:51.457127 [debug]: Finished rendering [  0.06s] model MARTS.agg_customer_type [success]
+11:28:51.457222 [info ]: Finished rendering [  0.07s] (4 nodes, 0 skipped, 0 errors)
+11:28:51.527014 [info ]:  Succeeded [  0.13s] model MARTS.agg_customer_type (table)
+11:28:51.527204 [debug]: Finished analyzing [  0.07s] model MARTS.agg_customer_type [success]
+11:28:51.545254 [info ]:  Succeeded [  0.15s] model MARTS.agg_top_products (table)
+11:28:51.545415 [debug]: Finished analyzing [  0.10s] model MARTS.agg_top_products [success]
+11:28:51.549422 [info ]:  Succeeded [  0.16s] model MARTS.agg_top_customers (table)
+11:28:51.549545 [debug]: Finished analyzing [  0.12s] model MARTS.agg_top_customers [success]
+11:28:51.581224 [info ]:  Succeeded [  0.19s] model STAGING.stg_orders (view)
+11:28:51.581408 [debug]: Finished analyzing [  0.16s] model STAGING.stg_orders [success]
+11:28:51.581459 [info ]: Finished analyzing [  0.16s] (4 nodes, 0 skipped, 0 errors)
+11:28:51.621024 [info ]: Cached model count updated: 5 models (accurate)
+11:28:54.875940 [info ]: Started loading project
+11:28:54.876611 [info ]: Loading ~/.dbt/profiles.yml
+11:28:54.901105 [info ]: Started parsing
+11:28:54.941847 [info ]: Finished loading project [  0.07s]
+11:28:54.959323 [debug]: Finished parsing models\marts\fct_orders.sql [  0.01s]
+11:28:54.960945 [info ]: Finished parsing [  0.06s]
+11:28:54.963896 [info ]: Cached model count updated: 5 models (estimate)
+11:28:54.963934 [info ]: Cached model count updated: 5 models (accurate)
+11:28:54.963985 [info ]: Started scheduling
+11:28:54.967815 [info ]: Finished scheduling [  0.00s]
+11:28:54.968796 [info ]: Started deferring state
+11:28:54.968840 [info ]: Finished deferring state [  0.00s]
+11:28:54.969569 [info ]: Started downloading schemas
+11:28:54.969641 [debug]:    Started downloading relations
+11:28:54.969679 [debug]:   Finished [  0.00s] downloading relations
+11:28:54.969704 [info ]: Finished downloading schemas [  0.00s]
+11:28:55.182281 [info ]: Started building task graph
+11:28:55.182360 [info ]: Finished building task graph [  0.00s]
+11:28:55.182492 [info ]: Started rendering (4 nodes)
+11:28:55.182509 [info ]: Started model MARTS.fct_orders
+11:28:55.182521 [debug]: Started rendering model MARTS.fct_orders
+11:28:55.188519 [debug]: Compiled SQL for node model.ecommerce_analytics.fct_orders at target\.lsp\compiled\models\marts\fct_orders.sql
+11:28:55.188822 [debug]: Finished rendering [  0.01s] model MARTS.fct_orders [success]
+11:28:55.189098 [info ]:  Succeeded [  0.01s] model MARTS.fct_orders (table)
+11:28:55.189319 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+11:28:55.195631 [info ]: Cached model count updated: 5 models (accurate)
+11:28:55.231957 [info ]: Started loading project
+11:28:55.233776 [info ]: Loading ~/.dbt/profiles.yml
+11:28:55.247731 [info ]: Started parsing
+11:28:55.276730 [info ]: Finished loading project [  0.04s]
+11:28:55.280849 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:28:55.281270 [info ]: Finished parsing [  0.03s]
+11:28:55.283256 [info ]: Cached model count updated: 5 models (estimate)
+11:28:55.283283 [info ]: Cached model count updated: 5 models (accurate)
+11:28:55.283317 [info ]: Started scheduling
+11:28:55.283427 [info ]: Finished scheduling [  0.00s]
+11:28:55.284027 [info ]: Started deferring state
+11:28:55.284052 [info ]: Finished deferring state [  0.00s]
+11:28:55.284450 [info ]: Started downloading schemas
+11:28:55.284501 [debug]:    Started downloading relations
+11:28:55.284527 [debug]:   Finished [  0.00s] downloading relations
+11:28:55.284547 [info ]: Finished downloading schemas [  0.00s]
+11:28:55.441220 [info ]: Started building task graph
+11:28:55.441306 [info ]: Finished building task graph [  0.00s]
+11:28:55.441456 [info ]: Started rendering (4 nodes)
+11:28:55.441474 [info ]: Started model MARTS.fct_orders
+11:28:55.441486 [debug]: Started rendering model MARTS.fct_orders
+11:28:55.444236 [debug]: Compiled SQL for node model.ecommerce_analytics.fct_orders at target\.lsp\compiled\models\marts\fct_orders.sql
+11:28:55.444557 [debug]: Finished rendering [  0.00s] model MARTS.fct_orders [success]
+11:28:55.444601 [info ]: Started analyzing (4 nodes)
+11:28:55.444616 [debug]: Started analyzing model MARTS.fct_orders
+11:28:55.460101 [error]: dbt0227: No column SALES_CHANNEL found. Available are ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.SALES_CHANEL, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.NET_SALES, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.ORDER_DATE, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.NET_REVENUE, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.ORDER_NUMBER, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.ORDER_STATUS, ECOMMERCE_ANALYTICS.STAGING.STG_ORDERS.CUSTOMER_NAME ..(and 5 more)
+  --> models\marts\fct_orders.sql:7:5
+11:28:55.460462 [info ]:     Failed [  0.02s] model MARTS.fct_orders (table)
+11:28:55.460492 [debug]: Finished analyzing [  0.02s] model MARTS.fct_orders [error]
+11:28:55.462480 [info ]: Started model MARTS.agg_top_products
+11:28:55.462517 [debug]: Started rendering model MARTS.agg_top_products
+11:28:55.462940 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_products [skipped]
+11:28:55.462964 [debug]: Started analyzing model MARTS.agg_top_products
+11:28:55.462978 [info ]:    Skipped [-------] model MARTS.agg_top_products (table)
+11:28:55.462991 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_products [skipped]
+11:28:55.463004 [info ]: Started model MARTS.agg_top_customers
+11:28:55.463013 [debug]: Started rendering model MARTS.agg_top_customers
+11:28:55.463021 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_customers [skipped]
+11:28:55.463028 [debug]: Started analyzing model MARTS.agg_top_customers
+11:28:55.463039 [info ]:    Skipped [-------] model MARTS.agg_top_customers (table)
+11:28:55.463046 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [skipped]
+11:28:55.463055 [info ]: Started model MARTS.agg_customer_type
+11:28:55.463060 [debug]: Started rendering model MARTS.agg_customer_type
+11:28:55.463068 [debug]: Finished rendering [  0.00s] model MARTS.agg_customer_type [skipped]
+11:28:55.463073 [info ]: Finished rendering [  0.02s] (4 nodes, 3 skipped, 0 errors)
+11:28:55.463080 [debug]: Started analyzing model MARTS.agg_customer_type
+11:28:55.463087 [info ]:    Skipped [-------] model MARTS.agg_customer_type (table)
+11:28:55.463097 [debug]: Finished analyzing [  0.00s] model MARTS.agg_customer_type [skipped]
+11:28:55.463101 [info ]: Finished analyzing [  0.02s] (4 nodes, 3 skipped, 1 errors)
+11:28:55.463212 [debug]: Incremental compilation - 4 nodes selected: {"model.ecommerce_analytics.agg_customer_type", "model.ecommerce_analytics.agg_top_customers", "model.ecommerce_analytics.agg_top_products", "model.ecommerce_analytics.fct_orders"}
+11:28:55.467403 [info ]: Cached model count updated: 5 models (accurate)
+11:29:03.166042 [info ]: Started loading project
+11:29:03.166782 [info ]: Loading ~/.dbt/profiles.yml
+11:29:03.176876 [info ]: Started parsing
+11:29:03.190282 [info ]: Finished loading project [  0.02s]
+11:29:03.193383 [info ]: Finished parsing [  0.02s]
+11:29:03.194717 [info ]: Cached model count updated: 5 models (estimate)
+11:29:03.194732 [info ]: Cached model count updated: 5 models (accurate)
+11:29:03.194751 [info ]: Started scheduling
+11:29:03.194779 [info ]: Finished scheduling [  0.00s]
+11:29:03.194791 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:29:03.194797 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:29:03.195154 [info ]: Started deferring state
+11:29:03.195162 [info ]: Finished deferring state [  0.00s]
+11:29:03.195435 [info ]: Started downloading schemas
+11:29:03.195453 [debug]:    Started downloading relations
+11:29:03.195467 [debug]:   Finished [  0.00s] downloading relations
+11:29:03.195475 [info ]: Finished downloading schemas [  0.00s]
+11:29:03.324311 [info ]: Started building task graph
+11:29:03.324354 [info ]: Finished building task graph [  0.00s]
+11:29:03.324544 [debug]: Incremental compilation - 0 nodes selected: {}
+11:29:03.328495 [info ]: Cached model count updated: 5 models (accurate)
+11:29:49.658722 [info ]: Loading ~/.dbt/profiles.yml
+11:29:49.687220 [info ]: Started loading project
+11:29:49.687905 [info ]: Loading ~/.dbt/profiles.yml
+11:29:49.697392 [info ]: Started parsing
+11:29:49.713323 [info ]: Finished loading project [  0.03s]
+11:29:49.775894 [debug]: Finished parsing models\marts\fct_orders.sql [  0.06s]
+11:29:49.776626 [info ]: Finished parsing [  0.08s]
+11:29:49.779543 [info ]: Cached model count updated: 5 models (estimate)
+11:29:49.779567 [info ]: Cached model count updated: 5 models (accurate)
+11:29:49.779607 [info ]: Started scheduling
+11:29:49.779858 [info ]: Finished scheduling [  0.00s]
+11:29:49.780544 [info ]: Started deferring state
+11:29:49.780595 [info ]: Finished deferring state [  0.00s]
+11:29:49.781275 [info ]: Started downloading schemas
+11:29:49.784093 [debug]:    Started downloading relations
+11:29:49.784137 [debug]:   Finished [  0.00s] downloading relations
+11:29:49.784155 [info ]: Finished downloading schemas [  0.00s]
+11:29:49.938687 [info ]: Started building task graph
+11:29:49.938784 [info ]: Finished building task graph [  0.00s]
+11:29:49.938906 [info ]: Started rendering (4 nodes)
+11:29:49.938923 [info ]: Started model MARTS.fct_orders
+11:29:49.938934 [debug]: Started rendering model MARTS.fct_orders
+11:29:49.943216 [debug]: Compiled SQL for node model.ecommerce_analytics.fct_orders at target\.lsp\compiled\models\marts\fct_orders.sql
+11:29:49.943508 [debug]: Finished rendering [  0.00s] model MARTS.fct_orders [success]
+11:29:49.943661 [info ]: Started analyzing (4 nodes)
+11:29:49.943742 [debug]: Started analyzing model MARTS.fct_orders
+11:29:49.945948 [info ]:  Succeeded [  0.01s] model MARTS.fct_orders (table)
+11:29:49.945976 [debug]: Finished analyzing [  0.00s] model MARTS.fct_orders [success]
+11:29:49.945995 [info ]: Started model MARTS.agg_customer_type
+11:29:49.946003 [debug]: Started rendering model MARTS.agg_customer_type
+11:29:49.946018 [info ]: Started model MARTS.agg_top_customers
+11:29:49.946022 [debug]: Started rendering model MARTS.agg_top_customers
+11:29:49.946041 [info ]: Started model MARTS.agg_top_products
+11:29:49.946047 [debug]: Started rendering model MARTS.agg_top_products
+11:29:49.949519 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_customer_type at target\.lsp\compiled\models\marts\agg_customer_type.sql
+11:29:49.949519 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_customers at target\.lsp\compiled\models\marts\agg_top_customers.sql
+11:29:49.949575 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_customers [success]
+11:29:49.949602 [debug]: Started analyzing model MARTS.agg_top_customers
+11:29:49.949615 [debug]: Finished rendering [  0.00s] model MARTS.agg_customer_type [success]
+11:29:49.949620 [debug]: Started analyzing model MARTS.agg_customer_type
+11:29:49.950679 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_products at target\.lsp\compiled\models\marts\agg_top_products.sql
+11:29:49.951148 [debug]: Started analyzing model MARTS.agg_top_products
+11:29:49.951382 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_products [success]
+11:29:49.951667 [info ]: Finished rendering [  0.01s] (4 nodes, 0 skipped, 0 errors)
+11:29:49.952216 [info ]:  Succeeded [  0.01s] model MARTS.agg_customer_type (table)
+11:29:49.952254 [debug]: Finished analyzing [  0.00s] model MARTS.agg_customer_type [success]
+11:29:49.953969 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_customers (table)
+11:29:49.954011 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [success]
+11:29:49.954753 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_products (table)
+11:29:49.954785 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_products [success]
+11:29:49.954793 [info ]: Finished analyzing [  0.01s] (4 nodes, 0 skipped, 0 errors)
+11:29:49.954952 [debug]: Incremental compilation - 4 nodes selected: {"model.ecommerce_analytics.agg_customer_type", "model.ecommerce_analytics.agg_top_customers", "model.ecommerce_analytics.agg_top_products", "model.ecommerce_analytics.fct_orders"}
+11:29:49.959269 [info ]: Cached model count updated: 5 models (accurate)
+11:29:50.002010 [info ]: Started loading project
+11:29:50.003085 [info ]: Loading ~/.dbt/profiles.yml
+11:29:50.015586 [info ]: Started parsing
+11:29:50.036034 [info ]: Finished loading project [  0.03s]
+11:29:50.038983 [info ]: Finished parsing [  0.02s]
+11:29:50.041177 [info ]: Cached model count updated: 5 models (estimate)
+11:29:50.041204 [info ]: Cached model count updated: 5 models (accurate)
+11:29:50.041235 [info ]: Started scheduling
+11:29:50.041288 [info ]: Finished scheduling [  0.00s]
+11:29:50.041310 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:29:50.041322 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:29:50.042365 [info ]: Started deferring state
+11:29:50.042394 [info ]: Finished deferring state [  0.00s]
+11:29:50.042855 [info ]: Started downloading schemas
+11:29:50.042886 [debug]:    Started downloading relations
+11:29:50.042906 [debug]:   Finished [  0.00s] downloading relations
+11:29:50.042920 [info ]: Finished downloading schemas [  0.00s]
+11:29:50.196541 [info ]: Started building task graph
+11:29:50.196581 [info ]: Finished building task graph [  0.00s]
+11:29:50.196714 [debug]: Incremental compilation - 0 nodes selected: {}
+11:29:50.200450 [info ]: Cached model count updated: 5 models (accurate)
+11:33:57.903826 [info ]: Started loading project
+11:33:57.910366 [info ]: Loading ~/.dbt/profiles.yml
+11:33:58.011768 [info ]: Started parsing
+11:33:58.200342 [info ]: Finished loading project [  0.30s]
+11:33:58.224890 [info ]: Finished parsing [  0.21s]
+11:33:58.243114 [info ]: Cached model count updated: 5 models (estimate)
+11:33:58.243262 [info ]: Cached model count updated: 5 models (accurate)
+11:33:58.243417 [info ]: Started scheduling
+11:33:58.243622 [info ]: Finished scheduling [  0.00s]
+11:33:58.243755 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:33:58.243807 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:33:58.247378 [info ]: Started deferring state
+11:33:58.247503 [info ]: Finished deferring state [  0.00s]
+11:33:58.249787 [info ]: Started downloading schemas
+11:33:58.249931 [debug]:    Started downloading relations
+11:33:58.250049 [debug]:   Finished [  0.00s] downloading relations
+11:33:58.250125 [info ]: Finished downloading schemas [  0.00s]
+11:33:59.986257 [info ]: Started building task graph
+11:33:59.986466 [info ]: Finished building task graph [  0.00s]
+11:33:59.987255 [debug]: Incremental compilation - 0 nodes selected: {}
+11:34:00.012664 [info ]: Cached model count updated: 5 models (accurate)
+11:35:00.530101 [info ]: Started loading project
+11:35:00.531196 [info ]: Loading ~/.dbt/profiles.yml
+11:35:00.540710 [info ]: Started loading project
+11:35:00.542047 [info ]: Loading ~/.dbt/profiles.yml
+11:35:00.542090 [info ]: Finished loading project [  0.01s]
+11:35:00.573802 [debug]:    Started loading packages
+11:35:00.579919 [debug]:     Loaded [  0.01s] packages
+11:35:00.579957 [debug]:    Started loading internal packages
+11:35:00.607707 [debug]:     Loaded [  0.03s] internal packages
+11:35:00.608030 [info ]: Started parsing
+11:35:00.660715 [info ]: Finished loading project [  0.12s]
+11:35:00.663754 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:35:00.668294 [debug]: Finished parsing models\marts\agg_customer_type.sql [  0.00s]
+11:35:00.668786 [debug]: Finished parsing models\marts\agg_monthly_sales.sql [  0.00s]
+11:35:00.669540 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:35:00.670424 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:35:00.670965 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:35:00.674879 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:35:00.675246 [info ]: Finished parsing [  0.07s]
+11:35:00.676166 [info ]: Cached model count updated: 6 models (estimate)
+11:35:00.676182 [info ]: Cached model count updated: 6 models (accurate)
+11:35:00.676203 [info ]: Started scheduling
+11:35:00.676271 [info ]: Finished scheduling [  0.00s]
+11:35:00.676284 [info ]: Started scheduling
+11:35:00.676314 [info ]: Finished scheduling [  0.00s]
+11:35:00.676357 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:35:00.677093 [info ]: Started deferring state
+11:35:00.677115 [info ]: Finished deferring state [  0.00s]
+11:35:00.677742 [info ]: Started downloading schemas
+11:35:00.677782 [debug]:    Started downloading relations
+11:35:00.677799 [debug]:   Finished [  0.00s] downloading relations
+11:35:00.677813 [info ]: Finished downloading schemas [  0.00s]
+11:35:00.882521 [info ]: Started building task graph
+11:35:00.882627 [info ]: Finished building task graph [  0.00s]
+11:35:00.882763 [info ]: Started rendering (5 nodes)
+11:35:00.882781 [info ]: Started model STAGING.stg_orders
+11:35:00.882793 [debug]: Started rendering model STAGING.stg_orders
+11:35:00.889814 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:35:00.889921 [info ]: Started analyzing (5 nodes)
+11:35:00.889934 [debug]: Started analyzing model STAGING.stg_orders
+11:35:00.890079 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:35:00.901841 [info ]:  Succeeded [  0.02s] model STAGING.stg_orders (view)
+11:35:00.901891 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
+11:35:00.901922 [info ]: Started model MARTS.fct_orders
+11:35:00.901937 [debug]: Started rendering model MARTS.fct_orders
+11:35:00.911645 [debug]: Compiled SQL for node model.ecommerce_analytics.fct_orders at target\.lsp\compiled\models\marts\fct_orders.sql
+11:35:00.911959 [debug]: Started analyzing model MARTS.fct_orders
+11:35:00.912052 [debug]: Finished rendering [  0.01s] model MARTS.fct_orders [success]
+11:35:00.916475 [info ]:  Succeeded [  0.01s] model MARTS.fct_orders (table)
+11:35:00.916523 [debug]: Finished analyzing [  0.00s] model MARTS.fct_orders [success]
+11:35:00.916564 [info ]: Started model MARTS.agg_customer_type
+11:35:00.916585 [debug]: Started rendering model MARTS.agg_customer_type
+11:35:00.916623 [info ]: Started model MARTS.agg_top_products
+11:35:00.916639 [debug]: Started rendering model MARTS.agg_top_products
+11:35:00.916655 [info ]: Started model MARTS.agg_top_customers
+11:35:00.916663 [debug]: Started rendering model MARTS.agg_top_customers
+11:35:00.922166 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_customers at target\.lsp\compiled\models\marts\agg_top_customers.sql
+11:35:00.922312 [debug]: Started analyzing model MARTS.agg_top_customers
+11:35:00.922306 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_customers [success]
+11:35:00.925762 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_products at target\.lsp\compiled\models\marts\agg_top_products.sql
+11:35:00.925899 [debug]: Started analyzing model MARTS.agg_top_products
+11:35:00.926236 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_products [success]
+11:35:00.927181 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_customers (table)
+11:35:00.927232 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [success]
+11:35:00.928855 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_customer_type at target\.lsp\compiled\models\marts\agg_customer_type.sql
+11:35:00.930569 [debug]: Finished rendering [  0.01s] model MARTS.agg_customer_type [success]
+11:35:00.930632 [info ]: Finished rendering [  0.05s] (5 nodes, 0 skipped, 0 errors)
+11:35:00.930692 [debug]: Started analyzing model MARTS.agg_customer_type
+11:35:00.932416 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_products (table)
+11:35:00.932459 [debug]: Finished analyzing [  0.01s] model MARTS.agg_top_products [success]
+11:35:00.934087 [info ]:  Succeeded [  0.02s] model MARTS.agg_customer_type (table)
+11:35:00.934144 [debug]: Finished analyzing [  0.00s] model MARTS.agg_customer_type [success]
+11:35:00.934159 [info ]: Finished analyzing [  0.04s] (5 nodes, 0 skipped, 0 errors)
+11:35:00.942280 [info ]: Cached model count updated: 6 models (accurate)
+11:35:14.336854 [info ]: Started loading project
+11:35:14.338297 [info ]: Loading ~/.dbt/profiles.yml
+11:35:14.353297 [info ]: Started parsing
+11:35:14.375949 [info ]: Finished loading project [  0.04s]
+11:35:14.392859 [debug]: Finished parsing models\marts\agg_monthly_sales.sql [  0.02s]
+11:35:14.393064 [info ]: Finished parsing [  0.04s]
+11:35:14.395218 [info ]: Cached model count updated: 6 models (estimate)
+11:35:14.395271 [info ]: Cached model count updated: 6 models (accurate)
+11:35:14.395342 [info ]: Started scheduling
+11:35:14.395512 [info ]: Finished scheduling [  0.00s]
+11:35:14.396432 [info ]: Started deferring state
+11:35:14.396454 [info ]: Finished deferring state [  0.00s]
+11:35:14.396858 [info ]: Started downloading schemas
+11:35:14.396900 [debug]:    Started downloading relations
+11:35:14.396925 [debug]:   Finished [  0.00s] downloading relations
+11:35:14.396939 [info ]: Finished downloading schemas [  0.00s]
+11:35:14.663854 [info ]: Started building task graph
+11:35:14.663934 [info ]: Finished building task graph [  0.00s]
+11:35:14.667447 [info ]: Cached model count updated: 6 models (accurate)
+11:35:14.704161 [info ]: Started loading project
+11:35:14.706766 [info ]: Loading ~/.dbt/profiles.yml
+11:35:14.716305 [info ]: Started parsing
+11:35:14.736758 [info ]: Finished loading project [  0.03s]
+11:35:14.741614 [debug]: Finished parsing models\marts\agg_monthly_sales.sql [  0.00s]
+11:35:14.742155 [info ]: Finished parsing [  0.03s]
+11:35:14.743970 [info ]: Cached model count updated: 6 models (estimate)
+11:35:14.743992 [info ]: Cached model count updated: 6 models (accurate)
+11:35:14.744020 [info ]: Started scheduling
+11:35:14.744089 [info ]: Finished scheduling [  0.00s]
+11:35:14.744579 [info ]: Started deferring state
+11:35:14.744596 [info ]: Finished deferring state [  0.00s]
+11:35:14.744909 [info ]: Started downloading schemas
+11:35:14.744947 [debug]:    Started downloading relations
+11:35:14.744968 [debug]:   Finished [  0.00s] downloading relations
+11:35:14.744981 [info ]: Finished downloading schemas [  0.00s]
+11:35:14.907304 [info ]: Started building task graph
+11:35:14.907413 [info ]: Finished building task graph [  0.00s]
+11:35:14.907637 [info ]: Started rendering (1 nodes)
+11:35:14.907680 [info ]: Started model MARTS.agg_monthly_sales
+11:35:14.907702 [debug]: Started rendering model MARTS.agg_monthly_sales
+11:35:14.915686 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_monthly_sales at target\.lsp\compiled\models\marts\agg_monthly_sales.sql
+11:35:14.915842 [info ]: Started analyzing (1 nodes)
+11:35:14.915871 [debug]: Started analyzing model MARTS.agg_monthly_sales
+11:35:14.915920 [debug]: Finished rendering [  0.01s] model MARTS.agg_monthly_sales [success]
+11:35:14.915954 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+11:35:15.072264 [info ]:  Succeeded [  0.16s] model MARTS.agg_monthly_sales (table)
+11:35:15.072347 [debug]: Finished analyzing [  0.16s] model MARTS.agg_monthly_sales [success]
+11:35:15.072365 [info ]: Finished analyzing [  0.16s] (1 nodes, 0 skipped, 0 errors)
+11:35:15.072537 [debug]: Incremental compilation - 1 nodes selected: {"model.ecommerce_analytics.agg_monthly_sales"}
+11:35:15.081356 [info ]: Cached model count updated: 6 models (accurate)
+11:37:31.300112 [info ]: Started loading project
+11:37:31.301392 [info ]: Loading ~/.dbt/profiles.yml
+11:37:31.315842 [info ]: Started parsing
+11:37:31.357884 [info ]: Finished loading project [  0.06s]
+11:37:31.454340 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.09s]
+11:37:31.454851 [info ]: Finished parsing [  0.14s]
+11:37:31.456441 [info ]: Cached model count updated: 6 models (estimate)
+11:37:31.456459 [info ]: Cached model count updated: 6 models (accurate)
+11:37:31.456492 [info ]: Started scheduling
+11:37:31.456583 [info ]: Finished scheduling [  0.00s]
+11:37:31.457027 [info ]: Started deferring state
+11:37:31.457043 [info ]: Finished deferring state [  0.00s]
+11:37:31.457544 [info ]: Started downloading schemas
+11:37:31.457768 [debug]:    Started downloading relations
+11:37:31.457853 [debug]:   Finished [  0.00s] downloading relations
+11:37:31.457870 [info ]: Finished downloading schemas [  0.00s]
+11:37:31.663405 [info ]: Started building task graph
+11:37:31.663509 [info ]: Finished building task graph [  0.00s]
+11:37:31.667144 [info ]: Cached model count updated: 6 models (accurate)
+11:37:31.708486 [info ]: Started loading project
+11:37:31.709269 [info ]: Loading ~/.dbt/profiles.yml
+11:37:31.718022 [info ]: Started parsing
+11:37:31.746596 [info ]: Finished loading project [  0.04s]
+11:37:31.752438 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:37:31.753040 [info ]: Finished parsing [  0.04s]
+11:37:31.756523 [info ]: Cached model count updated: 6 models (estimate)
+11:37:31.756559 [info ]: Cached model count updated: 6 models (accurate)
+11:37:31.756611 [info ]: Started scheduling
+11:37:31.756739 [info ]: Finished scheduling [  0.00s]
+11:37:31.757865 [info ]: Started deferring state
+11:37:31.757910 [info ]: Finished deferring state [  0.00s]
+11:37:31.758633 [info ]: Started downloading schemas
+11:37:31.758727 [debug]:    Started downloading relations
+11:37:31.758765 [debug]:   Finished [  0.00s] downloading relations
+11:37:31.758792 [info ]: Finished downloading schemas [  0.00s]
+11:37:32.021693 [info ]: Started building task graph
+11:37:32.021800 [info ]: Finished building task graph [  0.00s]
+11:37:32.022011 [info ]: Started rendering (1 nodes)
+11:37:32.022057 [info ]: Started model MARTS.agg_top_customers
+11:37:32.022113 [debug]: Started rendering model MARTS.agg_top_customers
+11:37:32.026420 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_customers at target\.lsp\compiled\models\marts\agg_top_customers.sql
+11:37:32.026537 [info ]: Started analyzing (1 nodes)
+11:37:32.026552 [debug]: Started analyzing model MARTS.agg_top_customers
+11:37:32.027277 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_customers [success]
+11:37:32.027302 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+11:37:32.041678 [info ]:  Succeeded [  0.02s] model MARTS.agg_top_customers (table)
+11:37:32.041728 [debug]: Finished analyzing [  0.02s] model MARTS.agg_top_customers [success]
+11:37:32.041738 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+11:37:32.041869 [debug]: Incremental compilation - 1 nodes selected: {"model.ecommerce_analytics.agg_top_customers"}
+11:37:32.046244 [info ]: Cached model count updated: 6 models (accurate)
+11:38:32.666987 [info ]: Started loading project
+11:38:32.668586 [info ]: Loading ~/.dbt/profiles.yml
+11:38:32.686229 [info ]: Started parsing
+11:38:32.730792 [info ]: Finished loading project [  0.06s]
+11:38:32.736525 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:38:32.736950 [info ]: Finished parsing [  0.05s]
+11:38:32.739323 [info ]: Cached model count updated: 6 models (estimate)
+11:38:32.739351 [info ]: Cached model count updated: 6 models (accurate)
+11:38:32.739395 [info ]: Started scheduling
+11:38:32.739512 [info ]: Finished scheduling [  0.00s]
+11:38:32.740077 [info ]: Started deferring state
+11:38:32.740114 [info ]: Finished deferring state [  0.00s]
+11:38:32.740595 [info ]: Started downloading schemas
+11:38:32.740652 [debug]:    Started downloading relations
+11:38:32.740684 [debug]:   Finished [  0.00s] downloading relations
+11:38:32.740703 [info ]: Finished downloading schemas [  0.00s]
+11:38:32.897320 [info ]: Started building task graph
+11:38:32.897416 [info ]: Finished building task graph [  0.00s]
+11:38:32.897576 [info ]: Started rendering (1 nodes)
+11:38:32.897603 [info ]: Started model MARTS.agg_top_products
+11:38:32.897619 [debug]: Started rendering model MARTS.agg_top_products
+11:38:32.902565 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_products at target\.lsp\compiled\models\marts\agg_top_products.sql
+11:38:32.902658 [info ]: Started analyzing (1 nodes)
+11:38:32.902670 [debug]: Started analyzing model MARTS.agg_top_products
+11:38:32.902860 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_products [success]
+11:38:32.902984 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+11:38:32.908753 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_products (table)
+11:38:32.909175 [debug]: Finished analyzing [  0.01s] model MARTS.agg_top_products [success]
+11:38:32.909210 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+11:38:32.909356 [debug]: Incremental compilation - 1 nodes selected: {"model.ecommerce_analytics.agg_top_products"}
+11:38:32.916488 [info ]: Cached model count updated: 6 models (accurate)
+11:38:32.982293 [info ]: Started loading project
+11:38:32.983711 [info ]: Loading ~/.dbt/profiles.yml
+11:38:33.007667 [info ]: Started parsing
+11:38:33.098069 [info ]: Finished loading project [  0.12s]
+11:38:33.101258 [info ]: Finished parsing [  0.09s]
+11:38:33.102839 [info ]: Cached model count updated: 6 models (estimate)
+11:38:33.102867 [info ]: Cached model count updated: 6 models (accurate)
+11:38:33.102900 [info ]: Started scheduling
+11:38:33.102961 [info ]: Finished scheduling [  0.00s]
+11:38:33.102988 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:38:33.102997 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:38:33.104140 [info ]: Started deferring state
+11:38:33.104179 [info ]: Finished deferring state [  0.00s]
+11:38:33.105577 [info ]: Started downloading schemas
+11:38:33.105626 [debug]:    Started downloading relations
+11:38:33.105660 [debug]:   Finished [  0.00s] downloading relations
+11:38:33.105684 [info ]: Finished downloading schemas [  0.00s]
+11:38:33.302606 [info ]: Started building task graph
+11:38:33.302661 [info ]: Finished building task graph [  0.00s]
+11:38:33.302825 [debug]: Incremental compilation - 0 nodes selected: {}
+11:38:33.307818 [info ]: Cached model count updated: 6 models (accurate)
+11:39:45.195118 [info ]: Started loading project
+11:39:45.201092 [info ]: Loading ~/.dbt/profiles.yml
+11:39:45.292930 [info ]: Started parsing
+11:39:45.436775 [info ]: Finished loading project [  0.24s]
+11:39:45.460265 [info ]: Finished parsing [  0.17s]
+11:39:45.478646 [info ]: Cached model count updated: 6 models (estimate)
+11:39:45.478784 [info ]: Cached model count updated: 6 models (accurate)
+11:39:45.478929 [info ]: Started scheduling
+11:39:45.479127 [info ]: Finished scheduling [  0.00s]
+11:39:45.479254 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:39:45.479300 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:39:45.482873 [info ]: Started deferring state
+11:39:45.482994 [info ]: Finished deferring state [  0.00s]
+11:39:45.485166 [info ]: Started downloading schemas
+11:39:45.485320 [debug]:    Started downloading relations
+11:39:45.485421 [debug]:   Finished [  0.00s] downloading relations
+11:39:45.485499 [info ]: Finished downloading schemas [  0.00s]
+11:39:47.271985 [info ]: Started building task graph
+11:39:47.272231 [info ]: Finished building task graph [  0.00s]
+11:39:47.273205 [debug]: Incremental compilation - 0 nodes selected: {}
+11:39:47.297421 [info ]: Cached model count updated: 6 models (accurate)
+11:40:05.055650 [info ]: Started loading project
+11:40:05.056835 [info ]: Loading ~/.dbt/profiles.yml
+11:40:05.066172 [info ]: Started loading project
+11:40:05.066844 [info ]: Loading ~/.dbt/profiles.yml
+11:40:05.066913 [info ]: Finished loading project [  0.01s]
+11:40:05.092205 [debug]:    Started loading packages
+11:40:05.097840 [debug]:     Loaded [  0.01s] packages
+11:40:05.097872 [debug]:    Started loading internal packages
+11:40:05.124280 [debug]:     Loaded [  0.03s] internal packages
+11:40:05.124556 [info ]: Started parsing
+11:40:05.156141 [info ]: Finished loading project [  0.09s]
+11:40:05.157438 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:40:05.171376 [debug]: Finished parsing models\marts\agg_customer_type.sql [  0.00s]
+11:40:05.173111 [debug]: Finished parsing models\marts\agg_monthly_sales.sql [  0.00s]
+11:40:05.174727 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:40:05.176756 [debug]: Finished parsing models\marts\agg_top_products.sql [  0.00s]
+11:40:05.179027 [debug]: Finished parsing models\marts\discount_analysis.sql [  0.00s]
+11:40:05.179811 [debug]: Finished parsing models\marts\fct_orders.sql [  0.00s]
+11:40:05.184165 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:40:05.184504 [info ]: Finished parsing [  0.06s]
+11:40:05.185737 [info ]: Cached model count updated: 7 models (estimate)
+11:40:05.185754 [info ]: Cached model count updated: 7 models (accurate)
+11:40:05.185779 [info ]: Started scheduling
+11:40:05.185854 [info ]: Finished scheduling [  0.00s]
+11:40:05.185869 [info ]: Started scheduling
+11:40:05.185912 [info ]: Finished scheduling [  0.00s]
+11:40:05.185961 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:40:05.186803 [info ]: Started deferring state
+11:40:05.186827 [info ]: Finished deferring state [  0.00s]
+11:40:05.187141 [info ]: Started downloading schemas
+11:40:05.187177 [debug]:    Started downloading relations
+11:40:05.187198 [debug]:   Finished [  0.00s] downloading relations
+11:40:05.187214 [info ]: Finished downloading schemas [  0.00s]
+11:40:05.338409 [info ]: Started building task graph
+11:40:05.338549 [info ]: Finished building task graph [  0.00s]
+11:40:05.338732 [info ]: Started rendering (6 nodes)
+11:40:05.338746 [info ]: Started model STAGING.stg_orders
+11:40:05.338758 [debug]: Started rendering model STAGING.stg_orders
+11:40:05.345190 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:40:05.345268 [info ]: Started analyzing (6 nodes)
+11:40:05.345279 [debug]: Started analyzing model STAGING.stg_orders
+11:40:05.345489 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:40:05.351177 [info ]:  Succeeded [  0.01s] model STAGING.stg_orders (view)
+11:40:05.351209 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
+11:40:05.351232 [info ]: Started model MARTS.fct_orders
+11:40:05.351242 [debug]: Started rendering model MARTS.fct_orders
+11:40:05.355253 [debug]: Compiled SQL for node model.ecommerce_analytics.fct_orders at target\.lsp\compiled\models\marts\fct_orders.sql
+11:40:05.355330 [debug]: Started analyzing model MARTS.fct_orders
+11:40:05.355522 [debug]: Finished rendering [  0.00s] model MARTS.fct_orders [success]
+11:40:05.357887 [info ]:  Succeeded [  0.01s] model MARTS.fct_orders (table)
+11:40:05.357949 [debug]: Finished analyzing [  0.00s] model MARTS.fct_orders [success]
+11:40:05.357981 [info ]: Started model MARTS.agg_monthly_sales
+11:40:05.357995 [debug]: Started rendering model MARTS.agg_monthly_sales
+11:40:05.358031 [info ]: Started model MARTS.agg_top_customers
+11:40:05.358054 [debug]: Started rendering model MARTS.agg_top_customers
+11:40:05.358074 [info ]: Started model MARTS.agg_customer_type
+11:40:05.358082 [debug]: Started rendering model MARTS.agg_customer_type
+11:40:05.358095 [info ]: Started model MARTS.agg_top_products
+11:40:05.358101 [debug]: Started rendering model MARTS.agg_top_products
+11:40:05.362021 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_customers at target\.lsp\compiled\models\marts\agg_top_customers.sql
+11:40:05.362121 [debug]: Started analyzing model MARTS.agg_top_customers
+11:40:05.362256 [debug]: Finished rendering [  0.00s] model MARTS.agg_top_customers [success]
+11:40:05.362845 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_top_products at target\.lsp\compiled\models\marts\agg_top_products.sql
+11:40:05.362913 [debug]: Started analyzing model MARTS.agg_top_products
+11:40:05.363097 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_customer_type at target\.lsp\compiled\models\marts\agg_customer_type.sql
+11:40:05.363180 [debug]: Started analyzing model MARTS.agg_customer_type
+11:40:05.364626 [debug]: Finished rendering [  0.01s] model MARTS.agg_customer_type [success]
+11:40:05.364659 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_products [success]
+11:40:05.366034 [debug]: Compiled SQL for node model.ecommerce_analytics.agg_monthly_sales at target\.lsp\compiled\models\marts\agg_monthly_sales.sql
+11:40:05.366165 [debug]: Finished rendering [  0.01s] model MARTS.agg_monthly_sales [success]
+11:40:05.366182 [info ]: Finished rendering [  0.03s] (6 nodes, 0 skipped, 0 errors)
+11:40:05.366208 [debug]: Started analyzing model MARTS.agg_monthly_sales
+11:40:05.366236 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_products (table)
+11:40:05.366252 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_products [success]
+11:40:05.366438 [info ]:  Succeeded [  0.01s] model MARTS.agg_customer_type (table)
+11:40:05.366461 [debug]: Finished analyzing [  0.00s] model MARTS.agg_customer_type [success]
+11:40:05.366920 [info ]:  Succeeded [  0.01s] model MARTS.agg_top_customers (table)
+11:40:05.366944 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [success]
+11:40:05.375696 [info ]:  Succeeded [  0.02s] model MARTS.agg_monthly_sales (table)
+11:40:05.375746 [debug]: Finished analyzing [  0.01s] model MARTS.agg_monthly_sales [success]
+11:40:05.375757 [info ]: Finished analyzing [  0.03s] (6 nodes, 0 skipped, 0 errors)
+11:40:05.381128 [info ]: Cached model count updated: 7 models (accurate)
+11:40:12.540609 [info ]: Started loading project
+11:40:12.541545 [info ]: Loading ~/.dbt/profiles.yml
+11:40:12.549201 [info ]: Started parsing
+11:40:12.566284 [info ]: Finished loading project [  0.03s]
+11:40:12.600042 [debug]: Finished parsing models\marts\discount_analysis.sql [  0.03s]
+11:40:12.600446 [info ]: Finished parsing [  0.05s]
+11:40:12.602047 [info ]: Cached model count updated: 7 models (estimate)
+11:40:12.602062 [info ]: Cached model count updated: 7 models (accurate)
+11:40:12.602087 [info ]: Started scheduling
+11:40:12.602155 [info ]: Finished scheduling [  0.00s]
+11:40:12.602526 [info ]: Started deferring state
+11:40:12.602540 [info ]: Finished deferring state [  0.00s]
+11:40:12.602817 [info ]: Started downloading schemas
+11:40:12.602846 [debug]:    Started downloading relations
+11:40:12.602863 [debug]:   Finished [  0.00s] downloading relations
+11:40:12.602875 [info ]: Finished downloading schemas [  0.00s]
+11:40:12.805057 [info ]: Started building task graph
+11:40:12.805122 [info ]: Finished building task graph [  0.00s]
+11:40:12.809253 [info ]: Cached model count updated: 7 models (accurate)
+11:40:12.847884 [info ]: Started loading project
+11:40:12.848660 [info ]: Loading ~/.dbt/profiles.yml
+11:40:12.863880 [info ]: Started parsing
+11:40:12.892526 [info ]: Finished loading project [  0.04s]
+11:40:12.900767 [debug]: Finished parsing models\marts\discount_analysis.sql [  0.00s]
+11:40:12.901374 [info ]: Finished parsing [  0.04s]
+11:40:12.903593 [info ]: Cached model count updated: 7 models (estimate)
+11:40:12.903605 [info ]: Cached model count updated: 7 models (accurate)
+11:40:12.903631 [info ]: Started scheduling
+11:40:12.903695 [info ]: Finished scheduling [  0.00s]
+11:40:12.904081 [info ]: Started deferring state
+11:40:12.904094 [info ]: Finished deferring state [  0.00s]
+11:40:12.904361 [info ]: Started downloading schemas
+11:40:12.904385 [debug]:    Started downloading relations
+11:40:12.904400 [debug]:   Finished [  0.00s] downloading relations
+11:40:12.904409 [info ]: Finished downloading schemas [  0.00s]
+11:40:13.109936 [info ]: Started building task graph
+11:40:13.110013 [info ]: Finished building task graph [  0.00s]
+11:40:13.110147 [info ]: Started rendering (1 nodes)
+11:40:13.110162 [info ]: Started model MARTS.discount_analysis
+11:40:13.110173 [debug]: Started rendering model MARTS.discount_analysis
+11:40:13.112453 [debug]: Compiled SQL for node model.ecommerce_analytics.discount_analysis at target\.lsp\compiled\models\marts\discount_analysis.sql
+11:40:13.112529 [debug]: Finished rendering [  0.00s] model MARTS.discount_analysis [success]
+11:40:13.112559 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+11:40:13.112584 [info ]: Started analyzing (1 nodes)
+11:40:13.112594 [debug]: Started analyzing model MARTS.discount_analysis
+11:40:13.135625 [info ]:  Succeeded [  0.03s] model MARTS.discount_analysis (table)
+11:40:13.135663 [debug]: Finished analyzing [  0.02s] model MARTS.discount_analysis [success]
+11:40:13.135670 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 0 errors)
+11:40:13.135757 [debug]: Incremental compilation - 1 nodes selected: {"model.ecommerce_analytics.discount_analysis"}
+11:40:13.140264 [info ]: Cached model count updated: 7 models (accurate)

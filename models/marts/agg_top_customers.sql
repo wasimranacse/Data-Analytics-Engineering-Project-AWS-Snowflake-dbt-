@@ -1,15 +1,26 @@
 -- Top 10 customers
-{{ config(materialized='table') }}
+WITH customer_sales AS (
 
-SELECT 
-    customer_name,
-    COUNT(DISTINCT order_number) AS Total_Orders,
-    SUM(item_sold) AS Total_Items,
-    SUM(net_revenue) AS Total_Revenue,
-    RANK() OVER(ORDER BY SUM(net_revenue) DESC) AS Revenue_Rank
-FROM {{ ref('fct_orders') }}
-GROUP BY 1
-QUALIFY Revenue_Rank <= 10
-ORDER BY Total_Revenue DESC
+    SELECT
+        customer_name,
+        SUM(net_revenue) AS total_revenue,
+        COUNT(DISTINCT order_number) AS total_orders
+
+    FROM {{ ref('fct_orders') }}
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM customer_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
 
 

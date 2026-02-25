@@ -16688,3 +16688,1405 @@ Runtime Error
 [0m11:21:20.187299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020EC824C7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020EC7308BC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020ECAAE3EF0>]}
 [0m11:21:20.187299 [debug] [MainThread]: Flushing usage events
 [0m11:21:21.130401 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:35:45.961425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A5FFC6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A90491F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A9080D70>]}
+
+
+============================== 11:35:45.987638 | c8467c53-f647-459b-b4e7-b3cd3d22c4c9 ==============================
+[0m11:35:45.987638 [info ] [MainThread]: Running with dbt=1.11.5
+[0m11:35:45.987638 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\wasim\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wasim\\OneDrive\\Desktop\\2026\\dbt\\ecommerce_analytics\\logs'}
+[0m11:35:47.981223 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:35:47.981223 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:35:47.981223 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:35:48.507801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AB589700>]}
+[0m11:35:48.669319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AADB5E20>]}
+[0m11:35:48.685305 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m11:35:50.181757 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m11:35:56.208424 [debug] [MainThread]: Partial parsing enabled: 4 files deleted, 1 files added, 2 files changed.
+[0m11:35:56.208424 [debug] [MainThread]: Partial parsing: added file: ecommerce_analytics://models\marts\agg_monthly_sales.sql
+[0m11:35:56.209423 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_analytics://models\marts\dim_customers.sql
+[0m11:35:56.209423 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_analytics://models\marts\agg_channel_performance.sql
+[0m11:35:56.209423 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_analytics://models\marts\dim_products.sql
+[0m11:35:56.210424 [debug] [MainThread]: Partial parsing: deleted file: ecommerce_analytics://models\marts\agg_revenue_monthly.sql
+[0m11:35:56.210424 [debug] [MainThread]: Partial parsing: updated file: ecommerce_analytics://models\marts\agg_customer_type.sql
+[0m11:35:56.211426 [debug] [MainThread]: Partial parsing: updated file: ecommerce_analytics://models\marts\fct_orders.sql
+[0m11:35:56.602504 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_analytics.raw
+[0m11:35:56.706105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AB64D6A0>]}
+[0m11:35:56.829434 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:35:56.874107 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:35:56.989472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A875D6D0>]}
+[0m11:35:56.989472 [info ] [MainThread]: Found 6 models, 1 source, 523 macros
+[0m11:35:56.989472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207ABD89850>]}
+[0m11:35:57.005176 [info ] [MainThread]: 
+[0m11:35:57.007186 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:35:57.008184 [info ] [MainThread]: 
+[0m11:35:57.012009 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:35:57.012009 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:35:57.031217 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:36:10.268432 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:36:10.268432 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:36:10.269781 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:36:10.269781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:36:10.270847 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:36:10.271835 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:36:12.959697 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.691 seconds
+[0m11:36:12.985695 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 2.716 seconds
+[0m11:36:12.985695 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_STAGING'
+[0m11:36:13.001843 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_MARTS'
+[0m11:36:13.049966 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_STAGING"
+[0m11:36:13.049966 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_MARTS"
+[0m11:36:13.049966 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_STAGING: show objects in ECOMMERCE_ANALYTICS.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_STAGING"} */;
+[0m11:36:13.049966 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_MARTS: show objects in ECOMMERCE_ANALYTICS.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_MARTS"} */;
+[0m11:36:13.049966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:36:13.049966 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:36:13.456705 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.396 seconds
+[0m11:36:13.467705 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.406 seconds
+[0m11:36:13.472969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AB61A4B0>]}
+[0m11:36:13.504723 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m11:36:13.504723 [info ] [Thread-2 (]: 1 of 6 START sql view model STAGING.stg_orders ................................. [RUN]
+[0m11:36:13.504723 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.stg_orders'
+[0m11:36:13.504723 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m11:36:13.526291 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m11:36:13.529636 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m11:36:13.580703 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m11:36:13.584699 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.stg_orders"
+[0m11:36:13.585698 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_orders: create or replace   view ECOMMERCE_ANALYTICS.STAGING.stg_orders
+  
+  
+  
+  
+  as (
+    SELECT
+    orderdate::date AS Order_Date,
+    ordernumber::number AS Order_Number,
+    CASE
+        WHEN orderstatus = 'processing' THEN 'Completed'
+        ELSE 'Completed'
+    END AS Order_Status,
+    customername AS Customer_Name,
+    CASE
+        WHEN customertype = 'new' THEN 'New'
+        WHEN customertype = 'returning' THEN 'Returning'
+        ELSE ''
+    END AS Customer_Type,
+    CASE
+        WHEN productname = 'nan' THEN 'EasyWeed® HTV'
+        ELSE productname
+    END AS Product_Name,
+    
+    ITEMSSOLD::integer AS Item_Sold,
+    netsales::float AS Net_Sales,
+    CASE
+        WHEN attribution = 'Direct' THEN 'Direct'
+        WHEN attribution = 'Google' THEN 'Google'
+        WHEN attribution = 'Bing.com' THEN 'Bing'
+        WHEN attribution = 'Duckduckgo.com' THEN 'Duckduckgo'
+        WHEN attribution = 'Search.yahoo.com' THEN 'Yahoo'
+        WHEN attribution = 'Acetransco.com' THEN 'Ace Transco'
+        WHEN attribution = 'Ntp.msn.com' THEN 'MSN'
+        WHEN attribution = 'Imprintnext.com' THEN 'Imprint Next'
+        ELSE 'Direct'
+    END AS Sales_Chanel,
+    netrevenue::float AS Net_Revenue,
+    discountamount::float AS Discount_Amount,
+    couponamount::float AS Coupon_Amount
+FROM ECOMMERCE_ANALYTICS.RAW.ORDERS_RAW
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */;
+[0m11:36:13.586703 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:36:14.228793 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.653 seconds
+[0m11:36:14.292678 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AD43FA10>]}
+[0m11:36:14.292678 [info ] [Thread-2 (]: 1 of 6 OK created sql view model STAGING.stg_orders ............................ [[32mSUCCESS 1[0m in 0.77s]
+[0m11:36:14.292678 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m11:36:14.292678 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m11:36:14.292678 [info ] [Thread-4 (]: 2 of 6 START sql table model MARTS.fct_orders .................................. [RUN]
+[0m11:36:14.292678 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.fct_orders'
+[0m11:36:14.292678 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m11:36:14.309077 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m11:36:14.311347 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m11:36:14.340269 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m11:36:14.355224 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.fct_orders"
+[0m11:36:14.355773 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_orders: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    
+    
+    
+    as (SELECT
+    order_date,
+    order_number,
+    customer_name,
+    customer_type,
+    product_name,
+    sales_chanel,
+
+    item_sold,
+    net_sales,
+    net_revenue,
+    discount_amount,
+    coupon_amount
+
+FROM ECOMMERCE_ANALYTICS.STAGING.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */;
+[0m11:36:14.355773 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:36:16.253052 [debug] [Thread-4 (]: SQL status: SUCCESS 1342 in 1.903 seconds
+[0m11:36:16.253052 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AD359640>]}
+[0m11:36:16.253052 [info ] [Thread-4 (]: 2 of 6 OK created sql table model MARTS.fct_orders ............................. [[32mSUCCESS 1342[0m in 1.96s]
+[0m11:36:16.268870 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m11:36:16.268870 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.agg_customer_type
+[0m11:36:16.268870 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:36:16.268870 [debug] [Thread-5 (]: Began running node model.ecommerce_analytics.agg_top_customers
+[0m11:36:16.280762 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.agg_top_products
+[0m11:36:16.268870 [info ] [Thread-3 (]: 3 of 6 START sql table model MARTS.agg_customer_type ........................... [RUN]
+[0m11:36:16.279745 [info ] [Thread-2 (]: 4 of 6 START sql table model MARTS.agg_monthly_sales ........................... [RUN]
+[0m11:36:16.283978 [info ] [Thread-5 (]: 5 of 6 START sql table model MARTS.agg_top_customers ........................... [RUN]
+[0m11:36:16.288637 [info ] [Thread-4 (]: 6 of 6 START sql table model MARTS.agg_top_products ............................ [RUN]
+[0m11:36:16.295527 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_customer_type'
+[0m11:36:16.295527 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.agg_monthly_sales)
+[0m11:36:16.295527 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_top_customers'
+[0m11:36:16.301644 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.fct_orders, now model.ecommerce_analytics.agg_top_products)
+[0m11:36:16.301644 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.agg_customer_type
+[0m11:36:16.305632 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.agg_monthly_sales
+[0m11:36:16.307087 [debug] [Thread-5 (]: Began compiling node model.ecommerce_analytics.agg_top_customers
+[0m11:36:16.307087 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.agg_top_products
+[0m11:36:16.322046 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:36:16.335598 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:36:16.344044 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:36:16.346059 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_products"
+[0m11:36:16.356554 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.agg_customer_type
+[0m11:36:16.357123 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:36:16.357123 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.agg_monthly_sales
+[0m11:36:16.357123 [debug] [Thread-5 (]: Began executing node model.ecommerce_analytics.agg_top_customers
+[0m11:36:16.376575 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:36:16.378597 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.agg_top_products
+[0m11:36:16.385579 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:36:16.388329 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_analytics.agg_customer_type"
+[0m11:36:16.395329 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_products"
+[0m11:36:16.398654 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:36:16.398654 [debug] [Thread-3 (]: On model.ecommerce_analytics.agg_customer_type: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_customer_type
+    
+    
+    
+    as (
+
+SELECT
+    customer_type,
+    COUNT(DISTINCT customer_name) AS total_customers,
+    SUM(net_revenue) AS total_revenue,
+    
+    COUNT(DISTINCT order_number) AS total_orders
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_customer_type"} */;
+[0m11:36:16.398654 [debug] [Thread-2 (]: On model.ecommerce_analytics.agg_monthly_sales: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_monthly_sales
+    
+    
+    
+    as (WITH monthly_sales AS (
+
+    SELECT
+        DATE_TRUNC('month', order_date) AS order_month,
+        SUM(net_revenue) AS total_revenue,
+        SUM(net_sales) AS total_sales,
+        SUM(item_sold) AS total_items
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+final AS (
+
+    SELECT
+        *,
+        LAG(total_revenue) OVER (ORDER BY order_month) AS prev_month_revenue,
+
+        ROUND(
+            (total_revenue - LAG(total_revenue) OVER (ORDER BY order_month))
+            / NULLIF(LAG(total_revenue) OVER (ORDER BY order_month), 0) * 100,
+            2
+        ) AS revenue_growth_pct
+
+    FROM monthly_sales
+
+)
+
+SELECT * FROM final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_monthly_sales"} */;
+[0m11:36:16.398654 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:36:16.405228 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_customers"
+[0m11:36:16.412260 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_products"
+[0m11:36:16.415349 [debug] [Thread-5 (]: On model.ecommerce_analytics.agg_top_customers: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_customers
+    
+    
+    
+    as (-- Top 10 customers
+
+
+SELECT 
+    customer_name,
+    COUNT(DISTINCT order_number) AS Total_Orders,
+    SUM(item_sold) AS Total_Items,
+    SUM(net_revenue) AS Total_Revenue,
+    RANK() OVER(ORDER BY SUM(net_revenue) DESC) AS Revenue_Rank
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+QUALIFY Revenue_Rank <= 10
+ORDER BY Total_Revenue DESC
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_customers"} */;
+[0m11:36:16.420905 [debug] [Thread-4 (]: On model.ecommerce_analytics.agg_top_products: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_products
+    
+    
+    
+    as (-- Top 10 poducts
+
+
+SELECT
+    product_name,
+    COUNT(DISTINCT order_number) AS total_orders,
+    SUM(item_sold) AS total_items_sold,
+    SUM(net_revenue) AS total_revenue,
+    RANK() OVER (ORDER BY SUM(net_revenue) DESC) AS revenue_rank
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+QUALIFY revenue_rank <= 10
+ORDER BY total_revenue DESC
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_products"} */;
+[0m11:36:16.423961 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:36:17.250997 [debug] [Thread-4 (]: SQL status: SUCCESS 10 in 0.833 seconds
+[0m11:36:17.250997 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AD4549E0>]}
+[0m11:36:17.250997 [info ] [Thread-4 (]: 6 of 6 OK created sql table model MARTS.agg_top_products ....................... [[32mSUCCESS 10[0m in 0.95s]
+[0m11:36:17.250997 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.agg_top_products
+[0m11:36:17.306758 [debug] [Thread-2 (]: SQL status: SUCCESS 30 in 0.909 seconds
+[0m11:36:17.322999 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207ABBA59A0>]}
+[0m11:36:17.324183 [info ] [Thread-2 (]: 4 of 6 OK created sql table model MARTS.agg_monthly_sales ...................... [[32mSUCCESS 30[0m in 1.03s]
+[0m11:36:17.327110 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:36:17.395196 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 0.998 seconds
+[0m11:36:17.395196 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AD4CF410>]}
+[0m11:36:17.395196 [info ] [Thread-3 (]: 3 of 6 OK created sql table model MARTS.agg_customer_type ...................... [[32mSUCCESS 2[0m in 1.10s]
+[0m11:36:17.407329 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.agg_customer_type
+[0m11:36:17.460044 [debug] [Thread-5 (]: SQL status: SUCCESS 10 in 1.043 seconds
+[0m11:36:17.472981 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c8467c53-f647-459b-b4e7-b3cd3d22c4c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207AD4C5160>]}
+[0m11:36:17.473998 [info ] [Thread-5 (]: 5 of 6 OK created sql table model MARTS.agg_top_customers ...................... [[32mSUCCESS 10[0m in 1.18s]
+[0m11:36:17.475983 [debug] [Thread-5 (]: Finished running node model.ecommerce_analytics.agg_top_customers
+[0m11:36:17.481981 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:36:17.482968 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:36:17.483979 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:36:17.557488 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:36:17.558488 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:36:17.636531 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_STAGING' was left open.
+[0m11:36:17.636531 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_STAGING: Close
+[0m11:36:17.737308 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_MARTS' was left open.
+[0m11:36:17.737308 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_MARTS: Close
+[0m11:36:17.800394 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_monthly_sales' was left open.
+[0m11:36:17.800394 [debug] [MainThread]: On model.ecommerce_analytics.agg_monthly_sales: Close
+[0m11:36:17.921602 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_products' was left open.
+[0m11:36:17.921602 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_products: Close
+[0m11:36:17.984185 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_customer_type' was left open.
+[0m11:36:17.984185 [debug] [MainThread]: On model.ecommerce_analytics.agg_customer_type: Close
+[0m11:36:18.063271 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_customers' was left open.
+[0m11:36:18.063271 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_customers: Close
+[0m11:36:18.174143 [info ] [MainThread]: 
+[0m11:36:18.174143 [info ] [MainThread]: Finished running 5 table models, 1 view model in 0 hours 0 minutes and 21.16 seconds (21.16s).
+[0m11:36:18.174143 [debug] [MainThread]: Command end result
+[0m11:36:18.214740 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:36:18.214740 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:36:18.224989 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\run_results.json
+[0m11:36:18.224989 [info ] [MainThread]: 
+[0m11:36:18.224989 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:36:18.224989 [info ] [MainThread]: 
+[0m11:36:18.224989 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m11:36:18.224989 [debug] [MainThread]: Command `dbt run` succeeded at 11:36:18.224989 after 32.59 seconds
+[0m11:36:18.224989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A8CF8860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A91892B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000207A5708D10>]}
+[0m11:36:18.224989 [debug] [MainThread]: Flushing usage events
+[0m11:36:19.130528 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:37:37.646505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DD38EE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DD38FAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DD38FB90>]}
+
+
+============================== 11:37:37.659250 | 4d1c2960-9863-4c33-af7f-44be06a97b51 ==============================
+[0m11:37:37.659250 [info ] [MainThread]: Running with dbt=1.11.5
+[0m11:37:37.662331 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\wasim\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wasim\\OneDrive\\Desktop\\2026\\dbt\\ecommerce_analytics\\logs'}
+[0m11:37:38.189338 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:37:38.189338 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:37:38.189338 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:37:38.338060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DADAD910>]}
+[0m11:37:38.417440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DFB77AA0>]}
+[0m11:37:38.417440 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m11:37:38.903148 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m11:37:39.182655 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:37:39.182655 [debug] [MainThread]: Partial parsing: updated file: ecommerce_analytics://models\marts\agg_top_customers.sql
+[0m11:37:39.377365 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_analytics.raw
+[0m11:37:39.379605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E095AB40>]}
+[0m11:37:39.444012 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:37:39.448017 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:37:39.504203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E08415E0>]}
+[0m11:37:39.504203 [info ] [MainThread]: Found 6 models, 1 source, 523 macros
+[0m11:37:39.506249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E076B1A0>]}
+[0m11:37:39.508293 [info ] [MainThread]: 
+[0m11:37:39.508293 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:37:39.508293 [info ] [MainThread]: 
+[0m11:37:39.510336 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:37:39.516349 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:37:39.524843 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:37:39.622519 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:37:39.622519 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:37:39.622519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:37:39.622519 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:37:39.622519 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:37:39.622519 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:37:40.708211 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.076 seconds
+[0m11:37:40.796078 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 1.163 seconds
+[0m11:37:40.801975 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_STAGING'
+[0m11:37:40.813830 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_MARTS'
+[0m11:37:40.820719 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_STAGING"
+[0m11:37:40.822748 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_MARTS"
+[0m11:37:40.822748 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_STAGING: show objects in ECOMMERCE_ANALYTICS.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_STAGING"} */;
+[0m11:37:40.826305 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_MARTS: show objects in ECOMMERCE_ANALYTICS.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_MARTS"} */;
+[0m11:37:40.826305 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:37:40.826305 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:37:41.409732 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.586 seconds
+[0m11:37:41.417130 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.590 seconds
+[0m11:37:41.421748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DAE98EF0>]}
+[0m11:37:41.432450 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m11:37:41.433257 [info ] [Thread-2 (]: 1 of 6 START sql view model STAGING.stg_orders ................................. [RUN]
+[0m11:37:41.434314 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.stg_orders'
+[0m11:37:41.435069 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m11:37:41.441982 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m11:37:41.444011 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m11:37:41.460668 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m11:37:41.471930 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.stg_orders"
+[0m11:37:41.471930 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_orders: create or replace   view ECOMMERCE_ANALYTICS.STAGING.stg_orders
+  
+  
+  
+  
+  as (
+    SELECT
+    orderdate::date AS Order_Date,
+    ordernumber::number AS Order_Number,
+    CASE
+        WHEN orderstatus = 'processing' THEN 'Completed'
+        ELSE 'Completed'
+    END AS Order_Status,
+    customername AS Customer_Name,
+    CASE
+        WHEN customertype = 'new' THEN 'New'
+        WHEN customertype = 'returning' THEN 'Returning'
+        ELSE ''
+    END AS Customer_Type,
+    CASE
+        WHEN productname = 'nan' THEN 'EasyWeed® HTV'
+        ELSE productname
+    END AS Product_Name,
+    
+    ITEMSSOLD::integer AS Item_Sold,
+    netsales::float AS Net_Sales,
+    CASE
+        WHEN attribution = 'Direct' THEN 'Direct'
+        WHEN attribution = 'Google' THEN 'Google'
+        WHEN attribution = 'Bing.com' THEN 'Bing'
+        WHEN attribution = 'Duckduckgo.com' THEN 'Duckduckgo'
+        WHEN attribution = 'Search.yahoo.com' THEN 'Yahoo'
+        WHEN attribution = 'Acetransco.com' THEN 'Ace Transco'
+        WHEN attribution = 'Ntp.msn.com' THEN 'MSN'
+        WHEN attribution = 'Imprintnext.com' THEN 'Imprint Next'
+        ELSE 'Direct'
+    END AS Sales_Chanel,
+    netrevenue::float AS Net_Revenue,
+    discountamount::float AS Discount_Amount,
+    couponamount::float AS Coupon_Amount
+FROM ECOMMERCE_ANALYTICS.RAW.ORDERS_RAW
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */;
+[0m11:37:41.472982 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:37:42.228546 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.761 seconds
+[0m11:37:42.258821 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DE0C9610>]}
+[0m11:37:42.259806 [info ] [Thread-2 (]: 1 of 6 OK created sql view model STAGING.stg_orders ............................ [[32mSUCCESS 1[0m in 0.82s]
+[0m11:37:42.262834 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m11:37:42.264814 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m11:37:42.264814 [info ] [Thread-4 (]: 2 of 6 START sql table model MARTS.fct_orders .................................. [RUN]
+[0m11:37:42.265826 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.fct_orders'
+[0m11:37:42.266818 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m11:37:42.268823 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m11:37:42.269817 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m11:37:42.313529 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m11:37:42.315578 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.fct_orders"
+[0m11:37:42.315578 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_orders: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    
+    
+    
+    as (SELECT
+    order_date,
+    order_number,
+    customer_name,
+    customer_type,
+    product_name,
+    sales_chanel,
+
+    item_sold,
+    net_sales,
+    net_revenue,
+    discount_amount,
+    coupon_amount
+
+FROM ECOMMERCE_ANALYTICS.STAGING.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */;
+[0m11:37:42.316577 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:37:44.219894 [debug] [Thread-4 (]: SQL status: SUCCESS 1342 in 1.903 seconds
+[0m11:37:44.224104 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E1FED5B0>]}
+[0m11:37:44.224104 [info ] [Thread-4 (]: 2 of 6 OK created sql table model MARTS.fct_orders ............................. [[32mSUCCESS 1342[0m in 1.96s]
+[0m11:37:44.226145 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m11:37:44.228189 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.agg_customer_type
+[0m11:37:44.228189 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:37:44.230233 [debug] [Thread-5 (]: Began running node model.ecommerce_analytics.agg_top_customers
+[0m11:37:44.228189 [info ] [Thread-3 (]: 3 of 6 START sql table model MARTS.agg_customer_type ........................... [RUN]
+[0m11:37:44.230233 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_customer_type'
+[0m11:37:44.230233 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.agg_customer_type
+[0m11:37:44.235608 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.agg_top_products
+[0m11:37:44.245414 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:37:44.228189 [info ] [Thread-2 (]: 4 of 6 START sql table model MARTS.agg_monthly_sales ........................... [RUN]
+[0m11:37:44.230233 [info ] [Thread-5 (]: 5 of 6 START sql table model MARTS.agg_top_customers ........................... [RUN]
+[0m11:37:44.251663 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.agg_monthly_sales)
+[0m11:37:44.247464 [info ] [Thread-4 (]: 6 of 6 START sql table model MARTS.agg_top_products ............................ [RUN]
+[0m11:37:44.253707 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_top_customers'
+[0m11:37:44.257794 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.agg_monthly_sales
+[0m11:37:44.257794 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.agg_customer_type
+[0m11:37:44.262216 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.fct_orders, now model.ecommerce_analytics.agg_top_products)
+[0m11:37:44.262216 [debug] [Thread-5 (]: Began compiling node model.ecommerce_analytics.agg_top_customers
+[0m11:37:44.270028 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:37:44.277925 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:37:44.279954 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.agg_top_products
+[0m11:37:44.287855 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:37:44.292408 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_products"
+[0m11:37:44.301236 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.agg_monthly_sales
+[0m11:37:44.302509 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_analytics.agg_customer_type"
+[0m11:37:44.308631 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:37:44.311228 [debug] [Thread-3 (]: On model.ecommerce_analytics.agg_customer_type: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_customer_type
+    
+    
+    
+    as (
+
+SELECT
+    customer_type,
+    COUNT(DISTINCT customer_name) AS total_customers,
+    SUM(net_revenue) AS total_revenue,
+    
+    COUNT(DISTINCT order_number) AS total_orders
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_customer_type"} */;
+[0m11:37:44.311228 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.agg_top_products
+[0m11:37:44.313273 [debug] [Thread-5 (]: Began executing node model.ecommerce_analytics.agg_top_customers
+[0m11:37:44.313273 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:37:44.318929 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_products"
+[0m11:37:44.328067 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:37:44.331076 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:37:44.335073 [debug] [Thread-2 (]: On model.ecommerce_analytics.agg_monthly_sales: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_monthly_sales
+    
+    
+    
+    as (WITH monthly_sales AS (
+
+    SELECT
+        DATE_TRUNC('month', order_date) AS order_month,
+        SUM(net_revenue) AS total_revenue,
+        SUM(net_sales) AS total_sales,
+        SUM(item_sold) AS total_items
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+final AS (
+
+    SELECT
+        *,
+        LAG(total_revenue) OVER (ORDER BY order_month) AS prev_month_revenue,
+
+        ROUND(
+            (total_revenue - LAG(total_revenue) OVER (ORDER BY order_month))
+            / NULLIF(LAG(total_revenue) OVER (ORDER BY order_month), 0) * 100,
+            2
+        ) AS revenue_growth_pct
+
+    FROM monthly_sales
+
+)
+
+SELECT * FROM final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_monthly_sales"} */;
+[0m11:37:44.344489 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_products"
+[0m11:37:44.345487 [debug] [Thread-4 (]: On model.ecommerce_analytics.agg_top_products: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_products
+    
+    
+    
+    as (-- Top 10 poducts
+
+
+SELECT
+    product_name,
+    COUNT(DISTINCT order_number) AS total_orders,
+    SUM(item_sold) AS total_items_sold,
+    SUM(net_revenue) AS total_revenue,
+    RANK() OVER (ORDER BY SUM(net_revenue) DESC) AS revenue_rank
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+QUALIFY revenue_rank <= 10
+ORDER BY total_revenue DESC
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_products"} */;
+[0m11:37:44.351495 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_customers"
+[0m11:37:44.355951 [debug] [Thread-5 (]: On model.ecommerce_analytics.agg_top_customers: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_customers
+    
+    
+    
+    as (-- Top 10 customers
+WITH customer_sales AS (
+
+    SELECT
+        customer_name,
+        SUM(net_revenue) AS total_revenue,
+        COUNT(DISTINCT order_number) AS total_orders
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM customer_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_customers"} */;
+[0m11:37:44.358613 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:37:45.192207 [debug] [Thread-2 (]: SQL status: SUCCESS 30 in 0.865 seconds
+[0m11:37:45.192207 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E21FA420>]}
+[0m11:37:45.207887 [debug] [Thread-4 (]: SQL status: SUCCESS 10 in 0.865 seconds
+[0m11:37:45.207887 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E21826C0>]}
+[0m11:37:45.207887 [info ] [Thread-2 (]: 4 of 6 OK created sql table model MARTS.agg_monthly_sales ...................... [[32mSUCCESS 30[0m in 0.94s]
+[0m11:37:45.207887 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:37:45.207887 [info ] [Thread-4 (]: 6 of 6 OK created sql table model MARTS.agg_top_products ....................... [[32mSUCCESS 10[0m in 0.95s]
+[0m11:37:45.222943 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.agg_top_products
+[0m11:37:45.317067 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 1.002 seconds
+[0m11:37:45.323066 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E218C920>]}
+[0m11:37:45.323066 [info ] [Thread-3 (]: 3 of 6 OK created sql table model MARTS.agg_customer_type ...................... [[32mSUCCESS 2[0m in 1.09s]
+[0m11:37:45.323066 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.agg_customer_type
+[0m11:37:45.885459 [debug] [Thread-5 (]: SQL status: SUCCESS 10 in 1.528 seconds
+[0m11:37:45.885459 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d1c2960-9863-4c33-af7f-44be06a97b51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5E21F3830>]}
+[0m11:37:45.885459 [info ] [Thread-5 (]: 5 of 6 OK created sql table model MARTS.agg_top_customers ...................... [[32mSUCCESS 10[0m in 1.63s]
+[0m11:37:45.896839 [debug] [Thread-5 (]: Finished running node model.ecommerce_analytics.agg_top_customers
+[0m11:37:45.901211 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:37:45.902459 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:37:45.903084 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:37:45.963414 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:37:45.964413 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:37:46.049578 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_STAGING' was left open.
+[0m11:37:46.049578 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_STAGING: Close
+[0m11:37:46.130255 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_MARTS' was left open.
+[0m11:37:46.130255 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_MARTS: Close
+[0m11:37:46.199581 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_monthly_sales' was left open.
+[0m11:37:46.199581 [debug] [MainThread]: On model.ecommerce_analytics.agg_monthly_sales: Close
+[0m11:37:46.272770 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_products' was left open.
+[0m11:37:46.273760 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_products: Close
+[0m11:37:46.335205 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_customer_type' was left open.
+[0m11:37:46.336201 [debug] [MainThread]: On model.ecommerce_analytics.agg_customer_type: Close
+[0m11:37:46.419402 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_customers' was left open.
+[0m11:37:46.420462 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_customers: Close
+[0m11:37:46.500190 [info ] [MainThread]: 
+[0m11:37:46.501190 [info ] [MainThread]: Finished running 5 table models, 1 view model in 0 hours 0 minutes and 6.99 seconds (6.99s).
+[0m11:37:46.505262 [debug] [MainThread]: Command end result
+[0m11:37:46.549847 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:37:46.558700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:37:46.560743 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\run_results.json
+[0m11:37:46.560743 [info ] [MainThread]: 
+[0m11:37:46.560743 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:37:46.560743 [info ] [MainThread]: 
+[0m11:37:46.572147 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m11:37:46.575209 [debug] [MainThread]: Command `dbt run` succeeded at 11:37:46.575209 after 9.18 seconds
+[0m11:37:46.576204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DD9ED790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DDEA5A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5DD411730>]}
+[0m11:37:46.576204 [debug] [MainThread]: Flushing usage events
+[0m11:37:47.422493 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:39:06.225364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025572CAC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557534B800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255753490D0>]}
+
+
+============================== 11:39:06.242304 | 5a13baa5-958a-4a60-a87f-ba7b5ac51b7f ==============================
+[0m11:39:06.242304 [info ] [MainThread]: Running with dbt=1.11.5
+[0m11:39:06.244345 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\wasim\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wasim\\OneDrive\\Desktop\\2026\\dbt\\ecommerce_analytics\\logs'}
+[0m11:39:07.056212 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:39:07.056212 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:39:07.056212 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:39:07.289271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025577F086B0>]}
+[0m11:39:07.506307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025577929310>]}
+[0m11:39:07.506307 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m11:39:07.960633 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m11:39:08.223896 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:39:08.223896 [debug] [MainThread]: Partial parsing: updated file: ecommerce_analytics://models\marts\agg_top_products.sql
+[0m11:39:08.423031 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_analytics.raw
+[0m11:39:08.441191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025578917440>]}
+[0m11:39:08.514302 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:39:08.517078 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:39:08.571835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025578A0F110>]}
+[0m11:39:08.571835 [info ] [MainThread]: Found 6 models, 1 source, 523 macros
+[0m11:39:08.579537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025578A54D40>]}
+[0m11:39:08.581579 [info ] [MainThread]: 
+[0m11:39:08.581579 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:39:08.581579 [info ] [MainThread]: 
+[0m11:39:08.583617 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:39:08.591822 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:39:08.610733 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:39:08.690251 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:39:08.690251 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:39:08.690251 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:39:08.705648 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:39:08.705648 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:39:08.706813 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:39:09.389575 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.697 seconds
+[0m11:39:09.406744 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.702 seconds
+[0m11:39:09.406744 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_MARTS'
+[0m11:39:09.439641 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_STAGING'
+[0m11:39:09.439641 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_MARTS"
+[0m11:39:09.456199 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_STAGING"
+[0m11:39:09.456199 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_MARTS: show objects in ECOMMERCE_ANALYTICS.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_MARTS"} */;
+[0m11:39:09.456199 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_STAGING: show objects in ECOMMERCE_ANALYTICS.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_STAGING"} */;
+[0m11:39:09.456199 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:39:09.456199 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:39:09.976673 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.516 seconds
+[0m11:39:09.989466 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.535 seconds
+[0m11:39:10.002435 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255784246E0>]}
+[0m11:39:10.003528 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m11:39:10.015615 [info ] [Thread-2 (]: 1 of 6 START sql view model STAGING.stg_orders ................................. [RUN]
+[0m11:39:10.018163 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.stg_orders'
+[0m11:39:10.018163 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m11:39:10.025198 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m11:39:10.025198 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m11:39:10.059393 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m11:39:10.059393 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.stg_orders"
+[0m11:39:10.062781 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_orders: create or replace   view ECOMMERCE_ANALYTICS.STAGING.stg_orders
+  
+  
+  
+  
+  as (
+    SELECT
+    orderdate::date AS Order_Date,
+    ordernumber::number AS Order_Number,
+    CASE
+        WHEN orderstatus = 'processing' THEN 'Completed'
+        ELSE 'Completed'
+    END AS Order_Status,
+    customername AS Customer_Name,
+    CASE
+        WHEN customertype = 'new' THEN 'New'
+        WHEN customertype = 'returning' THEN 'Returning'
+        ELSE ''
+    END AS Customer_Type,
+    CASE
+        WHEN productname = 'nan' THEN 'EasyWeed® HTV'
+        ELSE productname
+    END AS Product_Name,
+    
+    ITEMSSOLD::integer AS Item_Sold,
+    netsales::float AS Net_Sales,
+    CASE
+        WHEN attribution = 'Direct' THEN 'Direct'
+        WHEN attribution = 'Google' THEN 'Google'
+        WHEN attribution = 'Bing.com' THEN 'Bing'
+        WHEN attribution = 'Duckduckgo.com' THEN 'Duckduckgo'
+        WHEN attribution = 'Search.yahoo.com' THEN 'Yahoo'
+        WHEN attribution = 'Acetransco.com' THEN 'Ace Transco'
+        WHEN attribution = 'Ntp.msn.com' THEN 'MSN'
+        WHEN attribution = 'Imprintnext.com' THEN 'Imprint Next'
+        ELSE 'Direct'
+    END AS Sales_Chanel,
+    netrevenue::float AS Net_Revenue,
+    discountamount::float AS Discount_Amount,
+    couponamount::float AS Coupon_Amount
+FROM ECOMMERCE_ANALYTICS.RAW.ORDERS_RAW
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */;
+[0m11:39:10.062781 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:39:10.521595 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.458 seconds
+[0m11:39:10.572319 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A08EF00>]}
+[0m11:39:10.572319 [info ] [Thread-2 (]: 1 of 6 OK created sql view model STAGING.stg_orders ............................ [[32mSUCCESS 1[0m in 0.55s]
+[0m11:39:10.572319 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m11:39:10.572319 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m11:39:10.572319 [info ] [Thread-4 (]: 2 of 6 START sql table model MARTS.fct_orders .................................. [RUN]
+[0m11:39:10.572319 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.fct_orders'
+[0m11:39:10.572319 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m11:39:10.589505 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m11:39:10.589505 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m11:39:10.631610 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m11:39:10.633591 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.fct_orders"
+[0m11:39:10.634593 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_orders: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    
+    
+    
+    as (SELECT
+    order_date,
+    order_number,
+    customer_name,
+    customer_type,
+    product_name,
+    sales_chanel,
+
+    item_sold,
+    net_sales,
+    net_revenue,
+    discount_amount,
+    coupon_amount
+
+FROM ECOMMERCE_ANALYTICS.STAGING.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */;
+[0m11:39:10.634593 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:39:11.622697 [debug] [Thread-4 (]: SQL status: SUCCESS 1342 in 0.992 seconds
+[0m11:39:11.622697 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A0E0B00>]}
+[0m11:39:11.622697 [info ] [Thread-4 (]: 2 of 6 OK created sql table model MARTS.fct_orders ............................. [[32mSUCCESS 1342[0m in 1.05s]
+[0m11:39:11.630624 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m11:39:11.630624 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.agg_customer_type
+[0m11:39:11.630624 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:39:11.630624 [info ] [Thread-3 (]: 3 of 6 START sql table model MARTS.agg_customer_type ........................... [RUN]
+[0m11:39:11.630624 [debug] [Thread-5 (]: Began running node model.ecommerce_analytics.agg_top_customers
+[0m11:39:11.630624 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.agg_top_products
+[0m11:39:11.630624 [info ] [Thread-2 (]: 4 of 6 START sql table model MARTS.agg_monthly_sales ........................... [RUN]
+[0m11:39:11.630624 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_customer_type'
+[0m11:39:11.638537 [info ] [Thread-5 (]: 5 of 6 START sql table model MARTS.agg_top_customers ........................... [RUN]
+[0m11:39:11.643603 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.agg_monthly_sales)
+[0m11:39:11.644529 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.agg_customer_type
+[0m11:39:11.640526 [info ] [Thread-4 (]: 6 of 6 START sql table model MARTS.agg_top_products ............................ [RUN]
+[0m11:39:11.646532 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_top_customers'
+[0m11:39:11.647610 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.agg_monthly_sales
+[0m11:39:11.650173 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:39:11.655700 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.fct_orders, now model.ecommerce_analytics.agg_top_products)
+[0m11:39:11.657960 [debug] [Thread-5 (]: Began compiling node model.ecommerce_analytics.agg_top_customers
+[0m11:39:11.660621 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:39:11.660621 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.agg_top_products
+[0m11:39:11.666680 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:39:11.672148 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_products"
+[0m11:39:11.673271 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.agg_customer_type
+[0m11:39:11.675761 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.agg_monthly_sales
+[0m11:39:11.679852 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:39:11.689831 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:39:11.690920 [debug] [Thread-5 (]: Began executing node model.ecommerce_analytics.agg_top_customers
+[0m11:39:11.693821 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.agg_top_products
+[0m11:39:11.697969 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:39:11.700013 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_analytics.agg_customer_type"
+[0m11:39:11.700013 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_products"
+[0m11:39:11.700013 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:39:11.706035 [debug] [Thread-3 (]: On model.ecommerce_analytics.agg_customer_type: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_customer_type
+    
+    
+    
+    as (
+
+SELECT
+    customer_type,
+    COUNT(DISTINCT customer_name) AS total_customers,
+    SUM(net_revenue) AS total_revenue,
+    
+    COUNT(DISTINCT order_number) AS total_orders
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_customer_type"} */;
+[0m11:39:11.708088 [debug] [Thread-2 (]: On model.ecommerce_analytics.agg_monthly_sales: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_monthly_sales
+    
+    
+    
+    as (WITH monthly_sales AS (
+
+    SELECT
+        DATE_TRUNC('month', order_date) AS order_month,
+        SUM(net_revenue) AS total_revenue,
+        SUM(net_sales) AS total_sales,
+        SUM(item_sold) AS total_items
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+final AS (
+
+    SELECT
+        *,
+        LAG(total_revenue) OVER (ORDER BY order_month) AS prev_month_revenue,
+
+        ROUND(
+            (total_revenue - LAG(total_revenue) OVER (ORDER BY order_month))
+            / NULLIF(LAG(total_revenue) OVER (ORDER BY order_month), 0) * 100,
+            2
+        ) AS revenue_growth_pct
+
+    FROM monthly_sales
+
+)
+
+SELECT * FROM final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_monthly_sales"} */;
+[0m11:39:11.710249 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:39:11.711631 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_customers"
+[0m11:39:11.711631 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_products"
+[0m11:39:11.711631 [debug] [Thread-5 (]: On model.ecommerce_analytics.agg_top_customers: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_customers
+    
+    
+    
+    as (-- Top 10 customers
+WITH customer_sales AS (
+
+    SELECT
+        customer_name,
+        SUM(net_revenue) AS total_revenue,
+        COUNT(DISTINCT order_number) AS total_orders
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM customer_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_customers"} */;
+[0m11:39:11.711631 [debug] [Thread-4 (]: On model.ecommerce_analytics.agg_top_products: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_products
+    
+    
+    
+    as (-- Top 10 poducts
+WITH product_sales AS (
+
+    SELECT
+        product_name,
+        SUM(net_revenue) AS total_revenue,
+        SUM(item_sold) AS total_quantity
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM product_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_products"} */;
+[0m11:39:11.711631 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:39:12.340056 [debug] [Thread-4 (]: SQL status: SUCCESS 10 in 0.627 seconds
+[0m11:39:12.356445 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A1CCCB0>]}
+[0m11:39:12.357965 [info ] [Thread-4 (]: 6 of 6 OK created sql table model MARTS.agg_top_products ....................... [[32mSUCCESS 10[0m in 0.70s]
+[0m11:39:12.357965 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.agg_top_products
+[0m11:39:12.539987 [debug] [Thread-2 (]: SQL status: SUCCESS 30 in 0.826 seconds
+[0m11:39:12.544044 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A1BF920>]}
+[0m11:39:12.544044 [info ] [Thread-2 (]: 4 of 6 OK created sql table model MARTS.agg_monthly_sales ...................... [[32mSUCCESS 30[0m in 0.90s]
+[0m11:39:12.546081 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:39:12.640231 [debug] [Thread-5 (]: SQL status: SUCCESS 10 in 0.929 seconds
+[0m11:39:12.640231 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A17E3F0>]}
+[0m11:39:12.640231 [info ] [Thread-5 (]: 5 of 6 OK created sql table model MARTS.agg_top_customers ...................... [[32mSUCCESS 10[0m in 0.99s]
+[0m11:39:12.656443 [debug] [Thread-5 (]: Finished running node model.ecommerce_analytics.agg_top_customers
+[0m11:39:12.958337 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 1.248 seconds
+[0m11:39:12.962379 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5a13baa5-958a-4a60-a87f-ba7b5ac51b7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557A1419A0>]}
+[0m11:39:12.962379 [info ] [Thread-3 (]: 3 of 6 OK created sql table model MARTS.agg_customer_type ...................... [[32mSUCCESS 2[0m in 1.33s]
+[0m11:39:12.964400 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.agg_customer_type
+[0m11:39:12.970741 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:39:12.973511 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:39:12.974586 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:39:13.041767 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:39:13.042776 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:39:13.088095 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_MARTS' was left open.
+[0m11:39:13.104283 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_MARTS: Close
+[0m11:39:13.152461 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_STAGING' was left open.
+[0m11:39:13.168617 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_STAGING: Close
+[0m11:39:13.216687 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_monthly_sales' was left open.
+[0m11:39:13.216687 [debug] [MainThread]: On model.ecommerce_analytics.agg_monthly_sales: Close
+[0m11:39:13.267549 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_products' was left open.
+[0m11:39:13.267549 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_products: Close
+[0m11:39:13.345253 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_customer_type' was left open.
+[0m11:39:13.361279 [debug] [MainThread]: On model.ecommerce_analytics.agg_customer_type: Close
+[0m11:39:13.408945 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_customers' was left open.
+[0m11:39:13.408945 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_customers: Close
+[0m11:39:13.484388 [info ] [MainThread]: 
+[0m11:39:13.486390 [info ] [MainThread]: Finished running 5 table models, 1 view model in 0 hours 0 minutes and 4.90 seconds (4.90s).
+[0m11:39:13.491418 [debug] [MainThread]: Command end result
+[0m11:39:13.546278 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:39:13.548288 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:39:13.558633 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\run_results.json
+[0m11:39:13.558633 [info ] [MainThread]: 
+[0m11:39:13.558633 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:39:13.558633 [info ] [MainThread]: 
+[0m11:39:13.558633 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m11:39:13.558633 [debug] [MainThread]: Command `dbt run` succeeded at 11:39:13.558633 after 7.64 seconds
+[0m11:39:13.569235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002557376E780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000255723B8B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025575E95AC0>]}
+[0m11:39:13.569235 [debug] [MainThread]: Flushing usage events
+[0m11:39:14.412164 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:40:17.300093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221B9FBD820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BA3EC0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BA5995E0>]}
+
+
+============================== 11:40:17.311699 | 1467e895-1bf4-40f4-848f-99e2afd8c9a6 ==============================
+[0m11:40:17.311699 [info ] [MainThread]: Running with dbt=1.11.5
+[0m11:40:17.311699 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\wasim\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\wasim\\OneDrive\\Desktop\\2026\\dbt\\ecommerce_analytics\\logs'}
+[0m11:40:17.979510 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m11:40:17.979510 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m11:40:17.979510 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m11:40:18.156019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BC930FE0>]}
+[0m11:40:18.255655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BC8DAFF0>]}
+[0m11:40:18.255655 [info ] [MainThread]: Registered adapter: snowflake=1.11.2
+[0m11:40:18.726573 [debug] [MainThread]: checksum: 917838c7befe257b9b22a76c21e5785f6f23ac83ef0336e2870f03c9c3f28402, vars: {}, profile: , target: , version: 1.11.5
+[0m11:40:18.925903 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m11:40:18.925903 [debug] [MainThread]: Partial parsing: added file: ecommerce_analytics://models\marts\discount_analysis.sql
+[0m11:40:19.280063 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_analytics.raw
+[0m11:40:19.298326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BD3A25D0>]}
+[0m11:40:19.356168 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:40:19.356168 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:40:19.417333 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BD6760F0>]}
+[0m11:40:19.418263 [info ] [MainThread]: Found 7 models, 1 source, 523 macros
+[0m11:40:19.419263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BD42F4A0>]}
+[0m11:40:19.421265 [info ] [MainThread]: 
+[0m11:40:19.423263 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:40:19.424460 [info ] [MainThread]: 
+[0m11:40:19.426462 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:40:19.433453 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:40:19.439273 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS'
+[0m11:40:19.553854 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:40:19.553854 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS"
+[0m11:40:19.553854 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:40:19.553854 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS: show terse schemas in database ECOMMERCE_ANALYTICS
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS"} */
+[0m11:40:19.553854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:40:19.553854 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:40:20.322045 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.758 seconds
+[0m11:40:20.323072 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.767 seconds
+[0m11:40:20.340020 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_STAGING'
+[0m11:40:20.341541 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ECOMMERCE_ANALYTICS_MARTS'
+[0m11:40:20.364653 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_STAGING"
+[0m11:40:20.364653 [debug] [ThreadPool]: Using snowflake connection "list_ECOMMERCE_ANALYTICS_MARTS"
+[0m11:40:20.364653 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_STAGING: show objects in ECOMMERCE_ANALYTICS.STAGING
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_STAGING"} */;
+[0m11:40:20.364653 [debug] [ThreadPool]: On list_ECOMMERCE_ANALYTICS_MARTS: show objects in ECOMMERCE_ANALYTICS.MARTS
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "connection_name": "list_ECOMMERCE_ANALYTICS_MARTS"} */;
+[0m11:40:20.364653 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:40:20.364653 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:40:20.913156 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.546 seconds
+[0m11:40:20.941272 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 0.574 seconds
+[0m11:40:20.947326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BD0D1430>]}
+[0m11:40:20.962989 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.stg_orders
+[0m11:40:20.962989 [info ] [Thread-2 (]: 1 of 7 START sql view model STAGING.stg_orders ................................. [RUN]
+[0m11:40:20.962989 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.stg_orders'
+[0m11:40:20.962989 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.stg_orders
+[0m11:40:20.970592 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.stg_orders"
+[0m11:40:20.972598 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.stg_orders
+[0m11:40:21.020029 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.stg_orders"
+[0m11:40:21.023984 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.stg_orders"
+[0m11:40:21.023984 [debug] [Thread-2 (]: On model.ecommerce_analytics.stg_orders: create or replace   view ECOMMERCE_ANALYTICS.STAGING.stg_orders
+  
+  
+  
+  
+  as (
+    SELECT
+    orderdate::date AS Order_Date,
+    ordernumber::number AS Order_Number,
+    CASE
+        WHEN orderstatus = 'processing' THEN 'Completed'
+        ELSE 'Completed'
+    END AS Order_Status,
+    customername AS Customer_Name,
+    CASE
+        WHEN customertype = 'new' THEN 'New'
+        WHEN customertype = 'returning' THEN 'Returning'
+        ELSE ''
+    END AS Customer_Type,
+    CASE
+        WHEN productname = 'nan' THEN 'EasyWeed® HTV'
+        ELSE productname
+    END AS Product_Name,
+    
+    ITEMSSOLD::integer AS Item_Sold,
+    netsales::float AS Net_Sales,
+    CASE
+        WHEN attribution = 'Direct' THEN 'Direct'
+        WHEN attribution = 'Google' THEN 'Google'
+        WHEN attribution = 'Bing.com' THEN 'Bing'
+        WHEN attribution = 'Duckduckgo.com' THEN 'Duckduckgo'
+        WHEN attribution = 'Search.yahoo.com' THEN 'Yahoo'
+        WHEN attribution = 'Acetransco.com' THEN 'Ace Transco'
+        WHEN attribution = 'Ntp.msn.com' THEN 'MSN'
+        WHEN attribution = 'Imprintnext.com' THEN 'Imprint Next'
+        ELSE 'Direct'
+    END AS Sales_Chanel,
+    netrevenue::float AS Net_Revenue,
+    discountamount::float AS Discount_Amount,
+    couponamount::float AS Coupon_Amount
+FROM ECOMMERCE_ANALYTICS.RAW.ORDERS_RAW
+  )
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.stg_orders"} */;
+[0m11:40:21.023984 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:40:21.471149 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.445 seconds
+[0m11:40:21.508204 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BAC7A390>]}
+[0m11:40:21.508204 [info ] [Thread-2 (]: 1 of 7 OK created sql view model STAGING.stg_orders ............................ [[32mSUCCESS 1[0m in 0.54s]
+[0m11:40:21.516428 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.stg_orders
+[0m11:40:21.522038 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.fct_orders
+[0m11:40:21.525719 [info ] [Thread-4 (]: 2 of 7 START sql table model MARTS.fct_orders .................................. [RUN]
+[0m11:40:21.527803 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.fct_orders'
+[0m11:40:21.527803 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.fct_orders
+[0m11:40:21.530208 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.fct_orders"
+[0m11:40:21.530208 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.fct_orders
+[0m11:40:21.561956 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.fct_orders"
+[0m11:40:21.561956 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.fct_orders"
+[0m11:40:21.561956 [debug] [Thread-4 (]: On model.ecommerce_analytics.fct_orders: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    
+    
+    
+    as (SELECT
+    order_date,
+    order_number,
+    customer_name,
+    customer_type,
+    product_name,
+    sales_chanel,
+
+    item_sold,
+    net_sales,
+    net_revenue,
+    discount_amount,
+    coupon_amount
+
+FROM ECOMMERCE_ANALYTICS.STAGING.stg_orders
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.fct_orders"} */;
+[0m11:40:21.561956 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:40:22.623395 [debug] [Thread-4 (]: SQL status: SUCCESS 1342 in 1.068 seconds
+[0m11:40:22.623395 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BD6DDFD0>]}
+[0m11:40:22.623395 [info ] [Thread-4 (]: 2 of 7 OK created sql table model MARTS.fct_orders ............................. [[32mSUCCESS 1342[0m in 1.10s]
+[0m11:40:22.640473 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.fct_orders
+[0m11:40:22.640473 [debug] [Thread-3 (]: Began running node model.ecommerce_analytics.agg_customer_type
+[0m11:40:22.640473 [debug] [Thread-2 (]: Began running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:40:22.640473 [info ] [Thread-3 (]: 3 of 7 START sql table model MARTS.agg_customer_type ........................... [RUN]
+[0m11:40:22.640473 [info ] [Thread-2 (]: 4 of 7 START sql table model MARTS.agg_monthly_sales ........................... [RUN]
+[0m11:40:22.640473 [debug] [Thread-5 (]: Began running node model.ecommerce_analytics.agg_top_customers
+[0m11:40:22.655292 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.agg_top_products
+[0m11:40:22.656436 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_customer_type'
+[0m11:40:22.658434 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.stg_orders, now model.ecommerce_analytics.agg_monthly_sales)
+[0m11:40:22.660442 [info ] [Thread-5 (]: 5 of 7 START sql table model MARTS.agg_top_customers ........................... [RUN]
+[0m11:40:22.666439 [debug] [Thread-3 (]: Began compiling node model.ecommerce_analytics.agg_customer_type
+[0m11:40:22.664436 [info ] [Thread-4 (]: 6 of 7 START sql table model MARTS.agg_top_products ............................ [RUN]
+[0m11:40:22.672270 [debug] [Thread-2 (]: Began compiling node model.ecommerce_analytics.agg_monthly_sales
+[0m11:40:22.675284 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.ecommerce_analytics.agg_top_customers'
+[0m11:40:22.686546 [debug] [Thread-3 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:40:22.686546 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.fct_orders, now model.ecommerce_analytics.agg_top_products)
+[0m11:40:22.696374 [debug] [Thread-2 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:40:22.698979 [debug] [Thread-5 (]: Began compiling node model.ecommerce_analytics.agg_top_customers
+[0m11:40:22.698979 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.agg_top_products
+[0m11:40:22.708672 [debug] [Thread-5 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:40:22.708672 [debug] [Thread-3 (]: Began executing node model.ecommerce_analytics.agg_customer_type
+[0m11:40:22.727038 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.agg_top_products"
+[0m11:40:22.731366 [debug] [Thread-3 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_customer_type"
+[0m11:40:22.731366 [debug] [Thread-2 (]: Began executing node model.ecommerce_analytics.agg_monthly_sales
+[0m11:40:22.741736 [debug] [Thread-5 (]: Began executing node model.ecommerce_analytics.agg_top_customers
+[0m11:40:22.746702 [debug] [Thread-5 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_customers"
+[0m11:40:22.746702 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.agg_top_products
+[0m11:40:22.746702 [debug] [Thread-3 (]: Using snowflake connection "model.ecommerce_analytics.agg_customer_type"
+[0m11:40:22.760442 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_top_products"
+[0m11:40:22.762548 [debug] [Thread-2 (]: Writing runtime sql for node "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:40:22.763447 [debug] [Thread-3 (]: On model.ecommerce_analytics.agg_customer_type: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_customer_type
+    
+    
+    
+    as (
+
+SELECT
+    customer_type,
+    COUNT(DISTINCT customer_name) AS total_customers,
+    SUM(net_revenue) AS total_revenue,
+    
+    COUNT(DISTINCT order_number) AS total_orders
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY 1
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_customer_type"} */;
+[0m11:40:22.765448 [debug] [Thread-5 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_customers"
+[0m11:40:22.767443 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:40:22.769513 [debug] [Thread-5 (]: On model.ecommerce_analytics.agg_top_customers: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_customers
+    
+    
+    
+    as (-- Top 10 customers
+WITH customer_sales AS (
+
+    SELECT
+        customer_name,
+        SUM(net_revenue) AS total_revenue,
+        COUNT(DISTINCT order_number) AS total_orders
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM customer_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_customers"} */;
+[0m11:40:22.771450 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.agg_top_products"
+[0m11:40:22.773447 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m11:40:22.774552 [debug] [Thread-4 (]: On model.ecommerce_analytics.agg_top_products: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_top_products
+    
+    
+    
+    as (-- Top 10 poducts
+WITH product_sales AS (
+
+    SELECT
+        product_name,
+        SUM(net_revenue) AS total_revenue,
+        SUM(item_sold) AS total_quantity
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+ranked AS (
+
+    SELECT *,
+           DENSE_RANK() OVER (ORDER BY total_revenue DESC) AS rank_num
+    FROM product_sales
+
+)
+
+SELECT *
+FROM ranked
+WHERE rank_num <= 10
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_top_products"} */;
+[0m11:40:22.777441 [debug] [Thread-2 (]: Using snowflake connection "model.ecommerce_analytics.agg_monthly_sales"
+[0m11:40:22.785446 [debug] [Thread-2 (]: On model.ecommerce_analytics.agg_monthly_sales: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.agg_monthly_sales
+    
+    
+    
+    as (WITH monthly_sales AS (
+
+    SELECT
+        DATE_TRUNC('month', order_date) AS order_month,
+        SUM(net_revenue) AS total_revenue,
+        SUM(net_sales) AS total_sales,
+        SUM(item_sold) AS total_items
+
+    FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+    GROUP BY 1
+
+),
+
+final AS (
+
+    SELECT
+        *,
+        LAG(total_revenue) OVER (ORDER BY order_month) AS prev_month_revenue,
+
+        ROUND(
+            (total_revenue - LAG(total_revenue) OVER (ORDER BY order_month))
+            / NULLIF(LAG(total_revenue) OVER (ORDER BY order_month), 0) * 100,
+            2
+        ) AS revenue_growth_pct
+
+    FROM monthly_sales
+
+)
+
+SELECT * FROM final
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.agg_monthly_sales"} */;
+[0m11:40:23.533686 [debug] [Thread-4 (]: SQL status: SUCCESS 10 in 0.750 seconds
+[0m11:40:23.537727 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BED36450>]}
+[0m11:40:23.540041 [info ] [Thread-4 (]: 6 of 7 OK created sql table model MARTS.agg_top_products ....................... [[32mSUCCESS 10[0m in 0.85s]
+[0m11:40:23.540952 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.agg_top_products
+[0m11:40:23.544030 [debug] [Thread-4 (]: Began running node model.ecommerce_analytics.discount_analysis
+[0m11:40:23.544030 [info ] [Thread-4 (]: 7 of 7 START sql table model MARTS.discount_analysis ........................... [RUN]
+[0m11:40:23.544030 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.ecommerce_analytics.agg_top_products, now model.ecommerce_analytics.discount_analysis)
+[0m11:40:23.544030 [debug] [Thread-4 (]: Began compiling node model.ecommerce_analytics.discount_analysis
+[0m11:40:23.544030 [debug] [Thread-4 (]: Writing injected SQL for node "model.ecommerce_analytics.discount_analysis"
+[0m11:40:23.555356 [debug] [Thread-4 (]: Began executing node model.ecommerce_analytics.discount_analysis
+[0m11:40:23.561405 [debug] [Thread-4 (]: Writing runtime sql for node "model.ecommerce_analytics.discount_analysis"
+[0m11:40:23.563418 [debug] [Thread-4 (]: Using snowflake connection "model.ecommerce_analytics.discount_analysis"
+[0m11:40:23.565438 [debug] [Thread-4 (]: On model.ecommerce_analytics.discount_analysis: create or replace transient table ECOMMERCE_ANALYTICS.MARTS.discount_analysis
+    
+    
+    
+    as (SELECT
+    sales_chanel,
+
+    SUM(net_revenue) AS revenue,
+    SUM(discount_amount + coupon_amount) AS total_discount,
+
+    ROUND(
+        SUM(discount_amount + coupon_amount) / NULLIF(SUM(net_sales), 0) * 100,
+        2
+    ) AS discount_pct
+
+FROM ECOMMERCE_ANALYTICS.MARTS.fct_orders
+GROUP BY sales_chanel
+ORDER BY revenue DESC
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.5", "profile_name": "ecommerce_analytics", "target_name": "dev", "node_id": "model.ecommerce_analytics.discount_analysis"} */;
+[0m11:40:23.603651 [debug] [Thread-2 (]: SQL status: SUCCESS 30 in 0.817 seconds
+[0m11:40:23.605360 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BED83FB0>]}
+[0m11:40:23.607374 [info ] [Thread-2 (]: 4 of 7 OK created sql table model MARTS.agg_monthly_sales ...................... [[32mSUCCESS 30[0m in 0.95s]
+[0m11:40:23.611326 [debug] [Thread-2 (]: Finished running node model.ecommerce_analytics.agg_monthly_sales
+[0m11:40:23.611326 [debug] [Thread-3 (]: SQL status: SUCCESS 2 in 0.848 seconds
+[0m11:40:23.617373 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BECF1700>]}
+[0m11:40:23.617373 [info ] [Thread-3 (]: 3 of 7 OK created sql table model MARTS.agg_customer_type ...................... [[32mSUCCESS 2[0m in 0.98s]
+[0m11:40:23.619536 [debug] [Thread-3 (]: Finished running node model.ecommerce_analytics.agg_customer_type
+[0m11:40:23.904191 [debug] [Thread-5 (]: SQL status: SUCCESS 10 in 1.130 seconds
+[0m11:40:23.905726 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BEBFD400>]}
+[0m11:40:23.906367 [info ] [Thread-5 (]: 5 of 7 OK created sql table model MARTS.agg_top_customers ...................... [[32mSUCCESS 10[0m in 1.23s]
+[0m11:40:23.907170 [debug] [Thread-5 (]: Finished running node model.ecommerce_analytics.agg_top_customers
+[0m11:40:24.067751 [debug] [Thread-4 (]: SQL status: SUCCESS 8 in 0.501 seconds
+[0m11:40:24.071788 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1467e895-1bf4-40f4-848f-99e2afd8c9a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BEBFEA50>]}
+[0m11:40:24.071788 [info ] [Thread-4 (]: 7 of 7 OK created sql table model MARTS.discount_analysis ...................... [[32mSUCCESS 8[0m in 0.53s]
+[0m11:40:24.073952 [debug] [Thread-4 (]: Finished running node model.ecommerce_analytics.discount_analysis
+[0m11:40:24.073952 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:40:24.073952 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:40:24.073952 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:40:24.161196 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS' was left open.
+[0m11:40:24.163212 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS: Close
+[0m11:40:24.251996 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_STAGING' was left open.
+[0m11:40:24.251996 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_STAGING: Close
+[0m11:40:24.322354 [debug] [MainThread]: Connection 'list_ECOMMERCE_ANALYTICS_MARTS' was left open.
+[0m11:40:24.322354 [debug] [MainThread]: On list_ECOMMERCE_ANALYTICS_MARTS: Close
+[0m11:40:24.379117 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_monthly_sales' was left open.
+[0m11:40:24.381130 [debug] [MainThread]: On model.ecommerce_analytics.agg_monthly_sales: Close
+[0m11:40:24.437816 [debug] [MainThread]: Connection 'model.ecommerce_analytics.discount_analysis' was left open.
+[0m11:40:24.437816 [debug] [MainThread]: On model.ecommerce_analytics.discount_analysis: Close
+[0m11:40:24.491271 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_customer_type' was left open.
+[0m11:40:24.493283 [debug] [MainThread]: On model.ecommerce_analytics.agg_customer_type: Close
+[0m11:40:24.551702 [debug] [MainThread]: Connection 'model.ecommerce_analytics.agg_top_customers' was left open.
+[0m11:40:24.551702 [debug] [MainThread]: On model.ecommerce_analytics.agg_top_customers: Close
+[0m11:40:24.651864 [info ] [MainThread]: 
+[0m11:40:24.653087 [info ] [MainThread]: Finished running 6 table models, 1 view model in 0 hours 0 minutes and 5.23 seconds (5.23s).
+[0m11:40:24.656336 [debug] [MainThread]: Command end result
+[0m11:40:24.687259 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\manifest.json
+[0m11:40:24.691459 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\semantic_manifest.json
+[0m11:40:24.698921 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\wasim\OneDrive\Desktop\2026\dbt\ecommerce_analytics\target\run_results.json
+[0m11:40:24.699927 [info ] [MainThread]: 
+[0m11:40:24.700927 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:40:24.701930 [info ] [MainThread]: 
+[0m11:40:24.703485 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m11:40:24.707275 [debug] [MainThread]: Command `dbt run` succeeded at 11:40:24.707275 after 7.67 seconds
+[0m11:40:24.708344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BA935A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BA610B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000221BA611610>]}
+[0m11:40:24.708876 [debug] [MainThread]: Flushing usage events
+[0m11:40:25.489297 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,12 +1,4 @@
-
-  
-    
-
-create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
-    
-    
-    
-    as (SELECT
+SELECT
     order_date,
     order_number,
     customer_name,
@@ -20,9 +12,4 @@ create or replace transient table ECOMMERCE_ANALYTICS.MARTS.fct_orders
     discount_amount,
     coupon_amount
 
-FROM ECOMMERCE_ANALYTICS.STAGING.stg_orders
-    )
-;
-
-
-  
+FROM {{ ref('stg_orders') }}
