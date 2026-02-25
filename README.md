@@ -1,7 +1,7 @@
 # dbt Snowflake Analytics Project
 
 ## 📌 Overview
-This project demonstrates a scalable analytics engineering pipeline using dbt and Snowflake.
+This project demonstrates a scalable data and analytics engineering pipeline using dbt and Snowflake.
 
 ## 🏗 Architecture
 - Raw → Staging → Marts
@@ -15,8 +15,11 @@ This project demonstrates a scalable analytics engineering pipeline using dbt an
 
 ## 📊 Key Use Cases
 - Top 10 customers (window functions)
-- Top selling products
-- Revenue analysis
+- Top-selling products
+- Revenue & discount analysis
+- Average monthly sales
+- Average customer types
+- 
 
 ## 🚀 How to Run
 ```bash
