@@ -5099,3 +5099,288 @@
 10:58:25.054267 [info ]: Cached model count updated: 9 models (accurate)
 11:09:11.541982 [info ]: Started loading project
 11:09:11.544755 [info ]: Finished loading project [  0.00s]
+11:24:55.072299 [info ]: Started loading project
+11:24:55.110675 [info ]: Loading ~/.dbt/profiles.yml
+11:24:55.351763 [debug]:    Started loading packages
+11:24:55.359181 [debug]:     Loaded [  0.01s] packages
+11:24:55.359223 [debug]:    Started loading internal packages
+11:24:55.379882 [debug]:     Failed [  0.02s] internal packages (error: Operation cancelled)
+11:24:55.380768 [info ]: Finished loading project [  0.31s]
+11:24:55.427237 [info ]: Started loading project
+11:24:55.428046 [info ]: Loading ~/.dbt/profiles.yml
+11:24:55.458742 [debug]:    Started loading packages
+11:24:55.464747 [debug]:     Loaded [  0.01s] packages
+11:24:55.464777 [debug]:    Started loading internal packages
+11:24:55.489033 [debug]:     Loaded [  0.02s] internal packages
+11:24:55.489701 [info ]: Started parsing
+11:24:55.551678 [info ]: Finished loading project [  0.12s]
+11:24:55.569085 [info ]: Finished parsing [  0.08s]
+11:24:55.569891 [info ]: Cached model count updated: 0 models (estimate)
+11:24:55.569918 [info ]: Cached model count updated: 0 models (accurate)
+11:24:55.569958 [info ]: Started scheduling
+11:24:55.570024 [info ]: Finished scheduling [  0.00s]
+11:24:55.570302 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:24:55.570933 [info ]: Started scheduling
+11:24:55.570973 [info ]: Finished scheduling [  0.00s]
+11:24:55.571922 [info ]: Started deferring state
+11:24:55.571949 [info ]: Finished deferring state [  0.00s]
+11:24:55.572808 [info ]: Started downloading schemas
+11:24:55.572867 [debug]:    Started downloading relations
+11:24:55.572935 [debug]:   Finished [  0.00s] downloading relations
+11:24:55.572957 [info ]: Finished downloading schemas [  0.00s]
+11:24:55.768514 [info ]: Started building task graph
+11:24:55.768581 [info ]: Finished building task graph [  0.00s]
+11:24:55.775446 [info ]: Cached model count updated: 0 models (accurate)
+11:25:03.321829 [info ]: Loading ~/.dbt/profiles.yml
+11:25:03.366938 [info ]: Started loading project
+11:25:03.368116 [info ]: Loading ~/.dbt/profiles.yml
+11:25:03.381314 [info ]: Started loading project
+11:25:03.382157 [info ]: Loading ~/.dbt/profiles.yml
+11:25:03.382336 [info ]: Finished loading project [  0.02s]
+11:25:03.415911 [debug]:    Started loading packages
+11:25:03.421476 [debug]:     Loaded [  0.01s] packages
+11:25:03.421592 [debug]:    Started loading internal packages
+11:25:03.450564 [debug]:     Loaded [  0.03s] internal packages
+11:25:03.450893 [info ]: Started parsing
+11:25:03.502394 [info ]: Finished loading project [  0.12s]
+11:25:03.573793 [debug]: Finished parsing models\raw\sources.yml [  0.07s]
+11:25:03.579413 [info ]: Finished parsing [  0.13s]
+11:25:03.580145 [info ]: Cached model count updated: 0 models (estimate)
+11:25:03.580167 [info ]: Cached model count updated: 0 models (accurate)
+11:25:03.580187 [info ]: Started scheduling
+11:25:03.580229 [info ]: Finished scheduling [  0.00s]
+11:25:03.580244 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:25:03.580255 [info ]: Started scheduling
+11:25:03.580263 [info ]: Finished scheduling [  0.00s]
+11:25:03.580766 [info ]: Started deferring state
+11:25:03.580782 [info ]: Finished deferring state [  0.00s]
+11:25:03.581079 [info ]: Started downloading schemas
+11:25:03.581096 [debug]:    Started downloading relations
+11:25:03.581116 [debug]:   Finished [  0.00s] downloading relations
+11:25:03.581129 [info ]: Finished downloading schemas [  0.00s]
+11:25:03.751295 [info ]: Started building task graph
+11:25:03.751348 [info ]: Finished building task graph [  0.00s]
+11:25:03.804575 [info ]: Started loading project
+11:25:03.808789 [info ]: Loading ~/.dbt/profiles.yml
+11:25:03.857464 [debug]:    Started loading packages
+11:25:03.864026 [debug]:     Loaded [  0.01s] packages
+11:25:03.864067 [debug]:    Started loading internal packages
+11:25:03.896541 [debug]:     Loaded [  0.03s] internal packages
+11:25:03.896814 [info ]: Started parsing
+11:25:03.943230 [info ]: Finished loading project [  0.14s]
+11:25:03.945468 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:03.950679 [info ]: Finished parsing [  0.05s]
+11:25:03.951308 [info ]: Cached model count updated: 0 models (estimate)
+11:25:03.951329 [info ]: Cached model count updated: 0 models (accurate)
+11:25:03.951765 [info ]: Started scheduling
+11:25:03.951818 [info ]: Finished scheduling [  0.00s]
+11:25:03.951833 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:25:03.951844 [info ]: Started scheduling
+11:25:03.951851 [info ]: Finished scheduling [  0.00s]
+11:25:03.952316 [info ]: Started deferring state
+11:25:03.952333 [info ]: Finished deferring state [  0.00s]
+11:25:03.952605 [info ]: Started downloading schemas
+11:25:03.952621 [debug]:    Started downloading relations
+11:25:03.953436 [debug]:   Finished [  0.00s] downloading relations
+11:25:03.953461 [info ]: Finished downloading schemas [  0.00s]
+11:25:04.179608 [info ]: Started building task graph
+11:25:04.179656 [info ]: Finished building task graph [  0.00s]
+11:25:04.183129 [info ]: Cached model count updated: 0 models (accurate)
+11:25:06.262101 [info ]: Started loading project
+11:25:06.264569 [info ]: Loading ~/.dbt/profiles.yml
+11:25:06.281411 [info ]: Started loading project
+11:25:06.283227 [info ]: Loading ~/.dbt/profiles.yml
+11:25:06.283291 [info ]: Finished loading project [  0.02s]
+11:25:06.316427 [debug]:    Started loading packages
+11:25:06.322243 [debug]:     Loaded [  0.01s] packages
+11:25:06.322288 [debug]:    Started loading internal packages
+11:25:06.350268 [debug]:     Loaded [  0.03s] internal packages
+11:25:06.350550 [info ]: Started parsing
+11:25:06.395392 [info ]: Finished loading project [  0.11s]
+11:25:06.397519 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:06.402216 [info ]: Finished parsing [  0.05s]
+11:25:06.402856 [info ]: Cached model count updated: 0 models (estimate)
+11:25:06.402874 [info ]: Cached model count updated: 0 models (accurate)
+11:25:06.402893 [info ]: Started scheduling
+11:25:06.402919 [info ]: Finished scheduling [  0.00s]
+11:25:06.402934 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:25:06.402946 [info ]: Started scheduling
+11:25:06.402953 [info ]: Finished scheduling [  0.00s]
+11:25:06.403455 [info ]: Started deferring state
+11:25:06.403472 [info ]: Finished deferring state [  0.00s]
+11:25:06.403746 [info ]: Started downloading schemas
+11:25:06.403762 [debug]:    Started downloading relations
+11:25:06.403783 [debug]:   Finished [  0.00s] downloading relations
+11:25:06.403796 [info ]: Finished downloading schemas [  0.00s]
+11:25:06.581225 [info ]: Started building task graph
+11:25:06.581328 [info ]: Finished building task graph [  0.00s]
+11:25:06.614079 [info ]: Started loading project
+11:25:06.615152 [info ]: Loading ~/.dbt/profiles.yml
+11:25:06.652676 [debug]:    Started loading packages
+11:25:06.657579 [debug]:     Loaded [  0.00s] packages
+11:25:06.657620 [debug]:    Started loading internal packages
+11:25:06.681603 [debug]:     Loaded [  0.02s] internal packages
+11:25:06.681884 [info ]: Started parsing
+11:25:06.720540 [info ]: Finished loading project [  0.11s]
+11:25:06.722954 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:06.728775 [info ]: Finished parsing [  0.05s]
+11:25:06.729330 [info ]: Cached model count updated: 0 models (estimate)
+11:25:06.729355 [info ]: Cached model count updated: 0 models (accurate)
+11:25:06.729376 [info ]: Started scheduling
+11:25:06.729413 [info ]: Finished scheduling [  0.00s]
+11:25:06.729423 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:25:06.729429 [info ]: Started scheduling
+11:25:06.729434 [info ]: Finished scheduling [  0.00s]
+11:25:06.729876 [info ]: Started deferring state
+11:25:06.729890 [info ]: Finished deferring state [  0.00s]
+11:25:06.730151 [info ]: Started downloading schemas
+11:25:06.730167 [debug]:    Started downloading relations
+11:25:06.730184 [debug]:   Finished [  0.00s] downloading relations
+11:25:06.730192 [info ]: Finished downloading schemas [  0.00s]
+11:25:06.891769 [info ]: Started building task graph
+11:25:06.891822 [info ]: Finished building task graph [  0.00s]
+11:25:06.895045 [info ]: Cached model count updated: 0 models (accurate)
+11:25:10.019110 [info ]: Started loading project
+11:25:10.020116 [info ]: Loading ~/.dbt/profiles.yml
+11:25:10.029361 [info ]: Started loading project
+11:25:10.030177 [info ]: Loading ~/.dbt/profiles.yml
+11:25:10.030237 [info ]: Finished loading project [  0.01s]
+11:25:10.078718 [debug]:    Started loading packages
+11:25:10.087876 [debug]:     Loaded [  0.01s] packages
+11:25:10.087906 [debug]:    Started loading internal packages
+11:25:10.115403 [debug]:     Loaded [  0.03s] internal packages
+11:25:10.115825 [info ]: Started parsing
+11:25:10.167052 [info ]: Finished loading project [  0.14s]
+11:25:10.169494 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:10.176310 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:10.176508 [info ]: Finished parsing [  0.06s]
+11:25:10.177000 [info ]: Cached model count updated: 1 models (estimate)
+11:25:10.177017 [info ]: Cached model count updated: 1 models (accurate)
+11:25:10.177038 [info ]: Started scheduling
+11:25:10.177098 [info ]: Finished scheduling [  0.00s]
+11:25:10.177109 [info ]: Started scheduling
+11:25:10.177122 [info ]: Finished scheduling [  0.00s]
+11:25:10.177238 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:10.177922 [info ]: Started deferring state
+11:25:10.177943 [info ]: Finished deferring state [  0.00s]
+11:25:10.178265 [info ]: Started downloading schemas
+11:25:10.178303 [debug]:    Started downloading relations
+11:25:10.178322 [debug]:   Finished [  0.00s] downloading relations
+11:25:10.178331 [info ]: Finished downloading schemas [  0.00s]
+11:25:10.323435 [info ]: Started building task graph
+11:25:10.323532 [info ]: Finished building task graph [  0.00s]
+11:25:10.323680 [info ]: Started rendering (1 nodes)
+11:25:10.323703 [info ]: Started model STAGING.stg_orders
+11:25:10.323721 [debug]: Started rendering model STAGING.stg_orders
+11:25:10.328904 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:25:10.329017 [info ]: Started analyzing (1 nodes)
+11:25:10.329013 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:25:10.329029 [debug]: Started analyzing model STAGING.stg_orders
+11:25:10.329036 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+11:25:10.364388 [info ]:  Succeeded [  0.04s] model STAGING.stg_orders (view)
+11:25:10.364434 [debug]: Finished analyzing [  0.04s] model STAGING.stg_orders [success]
+11:25:10.364448 [info ]: Finished analyzing [  0.04s] (1 nodes, 0 skipped, 0 errors)
+11:25:10.369508 [info ]: Cached model count updated: 1 models (accurate)
+11:25:10.433841 [info ]: Started loading project
+11:25:10.435358 [info ]: Loading ~/.dbt/profiles.yml
+11:25:10.458522 [info ]: Started parsing
+11:25:10.510063 [info ]: Finished loading project [  0.08s]
+11:25:10.523611 [info ]: Finished parsing [  0.07s]
+11:25:10.528850 [info ]: Cached model count updated: 1 models (estimate)
+11:25:10.528902 [info ]: Cached model count updated: 1 models (accurate)
+11:25:10.528950 [info ]: Started scheduling
+11:25:10.532269 [info ]: Finished scheduling [  0.00s]
+11:25:10.533960 [warn ]: dbt1600: The selection criterion '' does not match any enabled nodes
+11:25:10.534015 [warn ]: dbt1601: Nothing to do. Try checking your model configs and model specification args
+11:25:10.535824 [info ]: Started deferring state
+11:25:10.535872 [info ]: Finished deferring state [  0.00s]
+11:25:10.536583 [info ]: Started downloading schemas
+11:25:10.536627 [debug]:    Started downloading relations
+11:25:10.536669 [debug]:   Finished [  0.00s] downloading relations
+11:25:10.536704 [info ]: Finished downloading schemas [  0.00s]
+11:25:10.723825 [info ]: Started building task graph
+11:25:10.723869 [info ]: Finished building task graph [  0.00s]
+11:25:10.724600 [debug]: Incremental compilation - 0 nodes selected: {}
+11:25:10.728422 [info ]: Cached model count updated: 1 models (accurate)
+11:25:21.555278 [info ]: Started loading project
+11:25:21.556680 [info ]: Loading ~/.dbt/profiles.yml
+11:25:21.571915 [info ]: Started loading project
+11:25:21.572820 [info ]: Loading ~/.dbt/profiles.yml
+11:25:21.572871 [info ]: Finished loading project [  0.02s]
+11:25:21.609756 [debug]:    Started loading packages
+11:25:21.615415 [debug]:     Loaded [  0.01s] packages
+11:25:21.615456 [debug]:    Started loading internal packages
+11:25:21.643526 [debug]:     Loaded [  0.03s] internal packages
+11:25:21.644010 [info ]: Started parsing
+11:25:21.684853 [info ]: Finished loading project [  0.11s]
+11:25:21.686905 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:21.690738 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:21.694434 [debug]: Finished parsing models\staging\stg_orders.sql [  0.00s]
+11:25:21.697569 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:21.698196 [info ]: Cached model count updated: 2 models (estimate)
+11:25:21.698212 [info ]: Cached model count updated: 2 models (accurate)
+11:25:21.698228 [info ]: Started scheduling
+11:25:21.698281 [info ]: Finished scheduling [  0.00s]
+11:25:21.698295 [info ]: Started scheduling
+11:25:21.698316 [info ]: Finished scheduling [  0.00s]
+11:25:21.698381 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:21.699040 [info ]: Started deferring state
+11:25:21.699062 [info ]: Finished deferring state [  0.00s]
+11:25:21.699401 [info ]: Started downloading schemas
+11:25:21.699431 [debug]:    Started downloading relations
+11:25:21.699452 [debug]:   Finished [  0.00s] downloading relations
+11:25:21.699465 [info ]: Finished downloading schemas [  0.00s]
+11:25:21.860208 [info ]: Started building task graph
+11:25:21.860304 [info ]: Finished building task graph [  0.00s]
+11:25:21.865972 [info ]: Finished parsing [  0.22s]
+11:25:21.911030 [info ]: Started loading project
+11:25:21.911772 [info ]: Loading ~/.dbt/profiles.yml
+11:25:21.941645 [debug]:    Started loading packages
+11:25:21.949024 [debug]:     Loaded [  0.01s] packages
+11:25:21.949062 [debug]:    Started loading internal packages
+11:25:21.975660 [debug]:     Loaded [  0.03s] internal packages
+11:25:21.975964 [info ]: Started parsing
+11:25:22.016953 [info ]: Finished loading project [  0.11s]
+11:25:22.018459 [debug]: Finished parsing models\raw\sources.yml [  0.00s]
+11:25:22.023433 [debug]: Finished parsing models\marts\agg_top_customers.sql [  0.00s]
+11:25:22.028403 [debug]: Finished parsing models\staging\stg_orders.sql [  0.01s]
+11:25:22.028678 [error]: dbt1005: Ref 'fct_orders' not found in project. Searched for 'ecommerce_analytics.fct_orders, fct_orders'
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:22.029362 [info ]: Cached model count updated: 2 models (estimate)
+11:25:22.029377 [info ]: Cached model count updated: 2 models (accurate)
+11:25:22.029397 [info ]: Started scheduling
+11:25:22.029440 [info ]: Finished scheduling [  0.00s]
+11:25:22.029453 [info ]: Started scheduling
+11:25:22.029466 [info ]: Finished scheduling [  0.00s]
+11:25:22.029491 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "ECOMMERCE_ANALYTICS", schema: "RAW", table: "ORDERS_RAW" }) and interval: None
+11:25:22.030049 [info ]: Started deferring state
+11:25:22.030069 [info ]: Finished deferring state [  0.00s]
+11:25:22.030365 [info ]: Started downloading schemas
+11:25:22.030400 [debug]:    Started downloading relations
+11:25:22.030426 [debug]:   Finished [  0.00s] downloading relations
+11:25:22.030435 [info ]: Finished downloading schemas [  0.00s]
+11:25:22.285509 [info ]: Started building task graph
+11:25:22.285591 [info ]: Finished building task graph [  0.00s]
+11:25:22.285731 [info ]: Started rendering (2 nodes)
+11:25:22.285751 [info ]: Started model STAGING.stg_orders
+11:25:22.285763 [debug]: Started rendering model STAGING.stg_orders
+11:25:22.285787 [info ]: Started model MARTS.agg_top_customers
+11:25:22.285793 [debug]: Started rendering model MARTS.agg_top_customers
+11:25:22.285840 [info ]: Finished parsing [  0.31s]
+11:25:22.290332 [error]: dbt1501: Failed to render SQL not a key type: ref not found for package: ecommerce_analytics, model: fct_orders, version: None
+(in models\marts\agg_top_customers.sql:10:6)
+  --> models\marts\agg_top_customers.sql:10:6
+11:25:22.291342 [info ]: Started analyzing (2 nodes)
+11:25:22.291374 [debug]: Started analyzing model MARTS.agg_top_customers
+11:25:22.291934 [info ]:     Failed [  0.00s] model MARTS.agg_top_customers (table)
+11:25:22.292015 [debug]: Compiled SQL for node model.ecommerce_analytics.stg_orders at target\.lsp\compiled\models\staging\stg_orders.sql
+11:25:22.292104 [debug]: Finished analyzing [  0.00s] model MARTS.agg_top_customers [skipped]
+11:25:22.292459 [debug]: Finished rendering [  0.01s] model STAGING.stg_orders [success]
+11:25:22.292497 [debug]: Started analyzing model STAGING.stg_orders
+11:25:22.292571 [debug]: Finished rendering [  0.01s] model MARTS.agg_top_customers [error]
+11:25:22.292582 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 1 errors)
+11:25:22.303654 [info ]:  Succeeded [  0.02s] model STAGING.stg_orders (view)
+11:25:22.303702 [debug]: Finished analyzing [  0.01s] model STAGING.stg_orders [success]
+11:25:22.303709 [info ]: Finished analyzing [  0.01s] (2 nodes, 1 skipped, 0 errors)
+11:25:22.308991 [info ]: Cached model count updated: 2 models (accurate)
